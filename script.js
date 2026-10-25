@@ -1,10 +1,12 @@
 /**
  * Ahmed Hannan — Personal Portfolio Interactive Scripts
- * Red, Black & White Aesthetic
+ * Architectural Matte Aesthetic & 3D Tensor Manifold Simulation
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initHeroCanvas();
+  initTensorMeshCanvas();
+  initCardSpotlight();
+  initScrollReveal();
   initTypewriter();
   initStatsCounter();
   initCategoryFilter();
@@ -16,140 +18,271 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================================================
-   1. HERO CANVAS PARTICLE CONSTELLATION ANIMATION
+   1. 3D TENSOR MANIFOLD / TOPOLOGICAL WAVE SIMULATION
+   Mathematical perspective-projected grid with harmonic elevation & mouse ripples
    ========================================================================== */
-function initHeroCanvas() {
+function initTensorMeshCanvas() {
   const canvas = document.getElementById('hero-canvas');
   if (!canvas) return;
 
   const ctx = canvas.getContext('2d');
-  let width = (canvas.width = canvas.parentElement.offsetWidth);
-  let height = (canvas.height = canvas.parentElement.offsetHeight);
+  let width, height, dpr;
+  let animationFrameId;
 
-  const particles = [];
-  const particleCount = Math.min(Math.floor((width * height) / 12000), 75);
-  const maxDistance = 140;
+  function resize() {
+    dpr = window.devicePixelRatio || 1;
+    width = canvas.parentElement.offsetWidth;
+    height = canvas.parentElement.offsetHeight;
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
+    canvas.style.width = width + 'px';
+    canvas.style.height = height + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
 
+  resize();
+  window.addEventListener('resize', resize);
+
+  // 3D Grid Parameters
+  const cols = Math.min(Math.floor(width / 34), 48);
+  const rows = 26;
+  const gridWidth = Math.max(width * 1.35, 1200);
+  const gridDepth = 900;
+  const spacingX = gridWidth / (cols - 1);
+  const spacingZ = gridDepth / (rows - 1);
+
+  // Perspective Camera
+  const focalLength = 550;
+  const cameraY = -220; // Elevated camera looking down
+  const cameraTilt = 0.42; // Pitch angle in radians
+  const cosTilt = Math.cos(cameraTilt);
+  const sinTilt = Math.sin(cameraTilt);
+
+  // Mouse interaction state
   const mouse = {
-    x: null,
-    y: null,
-    radius: 120,
+    x: width * 0.5,
+    y: height * 0.4,
+    targetX: width * 0.5,
+    targetY: height * 0.4,
+    active: false,
+    radius: 280,
   };
 
-  window.addEventListener('resize', () => {
-    width = canvas.width = canvas.parentElement.offsetWidth;
-    height = canvas.height = canvas.parentElement.offsetHeight;
-  });
-
-  window.addEventListener('mousemove', (e) => {
-    const rect = canvas.getBoundingClientRect();
-    if (e.clientY <= rect.bottom) {
-      mouse.x = e.clientX - rect.left;
-      mouse.y = e.clientY - rect.top;
-    } else {
-      mouse.x = null;
-      mouse.y = null;
-    }
-  });
-
-  window.addEventListener('mouseleave', () => {
-    mouse.x = null;
-    mouse.y = null;
-  });
-
-  class Particle {
-    constructor() {
-      this.x = Math.random() * width;
-      this.y = Math.random() * height;
-      this.vx = (Math.random() - 0.5) * 0.7;
-      this.vy = (Math.random() - 0.5) * 0.7;
-      this.radius = Math.random() * 2 + 1;
-      // 80% white/dim gray, 20% crimson red
-      this.isRed = Math.random() < 0.25;
-      this.color = this.isRed ? '#ff2a55' : 'rgba(255, 255, 255, 0.75)';
-      this.glow = this.isRed ? 8 : 0;
-    }
-
-    update() {
-      this.x += this.vx;
-      this.y += this.vy;
-
-      if (this.x < 0 || this.x > width) this.vx *= -1;
-      if (this.y < 0 || this.y > height) this.vy *= -1;
-
-      // Mouse interactivity: gentle repulsion
-      if (mouse.x !== null && mouse.y !== null) {
-        const dx = mouse.x - this.x;
-        const dy = mouse.y - this.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < mouse.radius) {
-          const force = (mouse.radius - dist) / mouse.radius;
-          const angle = Math.atan2(dy, dx);
-          this.x -= Math.cos(angle) * force * 2;
-          this.y -= Math.sin(angle) * force * 2;
-        }
-      }
-    }
-
-    draw() {
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.fillStyle = this.color;
-      if (this.glow > 0) {
-        ctx.shadowColor = '#ff2a55';
-        ctx.shadowBlur = this.glow;
-      } else {
-        ctx.shadowBlur = 0;
-      }
-      ctx.fill();
-    }
-  }
-
-  for (let i = 0; i < particleCount; i++) {
-    particles.push(new Particle());
-  }
-
-  function animate() {
-    ctx.clearRect(0, 0, width, height);
-
-    // Draw connecting lines
-    for (let i = 0; i < particles.length; i++) {
-      for (let j = i + 1; j < particles.length; j++) {
-        const dx = particles[i].x - particles[j].x;
-        const dy = particles[i].y - particles[j].y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-
-        if (dist < maxDistance) {
-          const opacity = (1 - dist / maxDistance) * 0.28;
-          ctx.beginPath();
-          ctx.moveTo(particles[i].x, particles[i].y);
-          ctx.lineTo(particles[j].x, particles[j].y);
-          if (particles[i].isRed || particles[j].isRed) {
-            ctx.strokeStyle = `rgba(255, 42, 85, ${opacity * 1.5})`;
-          } else {
-            ctx.strokeStyle = `rgba(255, 255, 255, ${opacity * 0.6})`;
-          }
-          ctx.lineWidth = 1;
-          ctx.shadowBlur = 0;
-          ctx.stroke();
-        }
-      }
-    }
-
-    // Update and draw particles
-    particles.forEach((p) => {
-      p.update();
-      p.draw();
+  const heroSection = document.getElementById('hero');
+  if (heroSection) {
+    heroSection.addEventListener('mousemove', (e) => {
+      const rect = heroSection.getBoundingClientRect();
+      mouse.targetX = e.clientX - rect.left;
+      mouse.targetY = e.clientY - rect.top;
+      mouse.active = true;
     });
 
-    requestAnimationFrame(animate);
+    heroSection.addEventListener('mouseleave', () => {
+      mouse.active = false;
+    });
+  }
+
+  let time = 0;
+
+  function animate() {
+    time += 0.016;
+
+    // Smooth mouse interpolation
+    mouse.x += (mouse.targetX - mouse.x) * 0.08;
+    mouse.y += (mouse.targetY - mouse.y) * 0.08;
+
+    ctx.clearRect(0, 0, width, height);
+
+    const projectedPoints = [];
+    const originX = width * 0.5;
+    const originY = height * 0.48;
+
+    // Compute 3D coordinates and perspective projection
+    for (let r = 0; r < rows; r++) {
+      projectedPoints[r] = [];
+      const baseZ = r * spacingZ + 80;
+
+      for (let c = 0; c < cols; c++) {
+        const baseX = (c - (cols - 1) * 0.5) * spacingX;
+
+        // Base harmonic wave equation (representing a high-dimensional loss surface)
+        const u = c * 0.22;
+        const v = r * 0.24;
+        let waveHeight =
+          Math.sin(u + time * 0.9) * Math.cos(v + time * 0.7) * 28 +
+          Math.sin((u + v) * 0.6 - time * 1.1) * 16 +
+          Math.cos(u * 0.5 - time * 0.5) * 10;
+
+        // Interactive mouse gravitational ripple
+        if (mouse.active) {
+          // Approximate screen-to-world distance
+          const screenDx = baseX + originX - mouse.x;
+          const screenDy = baseZ * 0.4 + originY - mouse.y;
+          const dist2D = Math.sqrt(screenDx * screenDx + screenDy * screenDy);
+
+          if (dist2D < mouse.radius) {
+            const influence = (1 - dist2D / mouse.radius);
+            const ripple = Math.sin(dist2D * 0.05 - time * 4) * 36 * influence * influence;
+            waveHeight -= ripple;
+          }
+        }
+
+        // Apply camera rotation (pitch tilt around X axis)
+        const relY = waveHeight - cameraY;
+        const rotY = relY * cosTilt - baseZ * sinTilt;
+        const rotZ = relY * sinTilt + baseZ * cosTilt;
+
+        if (rotZ > 10) {
+          const scale = focalLength / rotZ;
+          const projX = originX + baseX * scale;
+          const projY = originY + rotY * scale;
+
+          // Normalized depth factor for shading (0 = far/fade, 1 = near)
+          const depthAlpha = Math.max(0, Math.min(1, 1 - (rotZ - 100) / 950));
+
+          projectedPoints[r][c] = {
+            x: projX,
+            y: projY,
+            z: rotZ,
+            alpha: depthAlpha,
+            wave: waveHeight,
+          };
+        } else {
+          projectedPoints[r][c] = null;
+        }
+      }
+    }
+
+    // Render wireframe grid lines with depth-faded alpha
+    ctx.lineWidth = 1;
+
+    // Longitudinal lines (Z-direction)
+    for (let c = 0; c < cols; c += 2) {
+      ctx.beginPath();
+      let started = false;
+
+      for (let r = 0; r < rows; r++) {
+        const p = projectedPoints[r][c];
+        if (p && p.alpha > 0.02) {
+          if (!started) {
+            ctx.moveTo(p.x, p.y);
+            started = true;
+          } else {
+            ctx.lineTo(p.x, p.y);
+          }
+        } else {
+          started = false;
+        }
+      }
+
+      const colAlpha = 0.16 * (1 - Math.abs(c - cols * 0.5) / (cols * 0.5));
+      ctx.strokeStyle = `rgba(185, 49, 63, ${Math.max(0, colAlpha)})`;
+      ctx.stroke();
+    }
+
+    // Latitudinal lines (X-direction)
+    for (let r = 0; r < rows; r++) {
+      ctx.beginPath();
+      let started = false;
+
+      for (let c = 0; c < cols; c++) {
+        const p = projectedPoints[r][c];
+        if (p && p.alpha > 0.02) {
+          if (!started) {
+            ctx.moveTo(p.x, p.y);
+            started = true;
+          } else {
+            ctx.lineTo(p.x, p.y);
+          }
+        } else {
+          started = false;
+        }
+      }
+
+      // Smooth depth fading
+      const rAlpha = (r / rows) * 0.14 + 0.02;
+      ctx.strokeStyle = `rgba(255, 255, 255, ${rAlpha})`;
+      ctx.stroke();
+    }
+
+    // Render tensor node markers at key topological intersections
+    for (let r = 2; r < rows; r += 3) {
+      for (let c = 2; c < cols; c += 3) {
+        const p = projectedPoints[r][c];
+        if (p && p.alpha > 0.15) {
+          const isCrimsonNode = (r + c) % 6 === 0;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, isCrimsonNode ? 2.2 : 1.3, 0, Math.PI * 2);
+
+          if (isCrimsonNode) {
+            ctx.fillStyle = `rgba(185, 49, 63, ${p.alpha * 0.85})`;
+          } else {
+            ctx.fillStyle = `rgba(244, 244, 246, ${p.alpha * 0.5})`;
+          }
+          ctx.fill();
+        }
+      }
+    }
+
+    animationFrameId = requestAnimationFrame(animate);
   }
 
   animate();
 }
 
 /* ==========================================================================
-   2. HERO SUBTITLE TYPEWRITER
+   2. CARD MOUSE SPOTLIGHT (Linear / Vercel Matte Lighting)
+   ========================================================================== */
+function initCardSpotlight() {
+  const cards = document.querySelectorAll(
+    '.project-card, .repo-dir-card, .timeline-card, .skill-category-card, .cv-card, .contact-channel-card, .contact-form-card'
+  );
+
+  cards.forEach((card) => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.setProperty('--mouse-x', '-999px');
+      card.style.setProperty('--mouse-y', '-999px');
+    });
+  });
+}
+
+/* ==========================================================================
+   3. SCROLL REVEAL ANIMATIONS
+   ========================================================================== */
+function initScrollReveal() {
+  const revealElements = document.querySelectorAll(
+    '.project-card, .repo-dir-card, .timeline-card, .skill-category-card, .cv-card, .contact-channel-card, .contact-form-card'
+  );
+
+  revealElements.forEach((el) => {
+    el.classList.add('reveal-on-scroll');
+  });
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+  );
+
+  revealElements.forEach((el) => observer.observe(el));
+}
+
+/* ==========================================================================
+   4. HERO SUBTITLE TYPEWRITER
    ========================================================================== */
 function initTypewriter() {
   const el = document.getElementById('typed-text');
@@ -166,9 +299,9 @@ function initTypewriter() {
   let roleIdx = 0;
   let charIdx = 0;
   let isDeleting = false;
-  const typeSpeed = 70;
-  const deleteSpeed = 35;
-  const pauseEnd = 1600;
+  const typeSpeed = 65;
+  const deleteSpeed = 30;
+  const pauseEnd = 1800;
 
   function type() {
     const currentRole = roles[roleIdx];
@@ -199,7 +332,7 @@ function initTypewriter() {
 }
 
 /* ==========================================================================
-   3. HERO STATS COUNTER ANIMATION
+   5. HERO STATS COUNTER ANIMATION
    ========================================================================== */
 function initStatsCounter() {
   const statNumbers = document.querySelectorAll('.stat-number');
@@ -245,7 +378,7 @@ function initStatsCounter() {
 }
 
 /* ==========================================================================
-   4. CATEGORY FILTERING FOR PROJECTS
+   6. CATEGORY FILTERING FOR PROJECTS
    ========================================================================== */
 function initCategoryFilter() {
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -269,12 +402,12 @@ function initCategoryFilter() {
         if (filterValue === 'all' || categories.includes(filterValue)) {
           card.classList.remove('hide');
           card.style.opacity = '0';
-          card.style.transform = 'translateY(12px)';
+          card.style.transform = 'translateY(10px)';
           setTimeout(() => {
-            card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            card.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
             card.style.opacity = '1';
             card.style.transform = 'translateY(0)';
-          }, 40);
+          }, 30);
         } else {
           card.classList.add('hide');
         }
@@ -284,7 +417,7 @@ function initCategoryFilter() {
 }
 
 /* ==========================================================================
-   5. NAVBAR SCROLL-SPY & ACTIVE STATE
+   7. NAVBAR SCROLL-SPY & ACTIVE STATE
    ========================================================================== */
 function initNavbarScrollSpy() {
   const navbar = document.getElementById('navbar');
@@ -294,14 +427,12 @@ function initNavbarScrollSpy() {
   window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY + 100;
 
-    // Toggle navbar background density
-    if (window.scrollY > 40) {
+    if (window.scrollY > 35) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
     }
 
-    // Highlight active link
     sections.forEach((section) => {
       const top = section.offsetTop;
       const height = section.offsetHeight;
@@ -320,7 +451,7 @@ function initNavbarScrollSpy() {
 }
 
 /* ==========================================================================
-   6. MOBILE NAVIGATION MENU
+   8. MOBILE NAVIGATION MENU
    ========================================================================== */
 function initMobileMenu() {
   const toggleBtn = document.getElementById('nav-toggle');
@@ -354,7 +485,7 @@ function initMobileMenu() {
 }
 
 /* ==========================================================================
-   7. EMAIL COPY TO CLIPBOARD WITH TOAST
+   9. EMAIL COPY TO CLIPBOARD WITH TOAST
    ========================================================================== */
 function initEmailCopy() {
   const copyButtons = document.querySelectorAll('.copy-email-btn');
@@ -364,16 +495,15 @@ function initEmailCopy() {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       navigator.clipboard.writeText(email).then(() => {
-        showToast('Copied ahmedhanan4@gmail.com to clipboard!');
+        showToast('Copied ahmedhanan4@gmail.com to clipboard');
       }).catch(() => {
-        // Fallback for older browsers
         const textarea = document.createElement('textarea');
         textarea.value = email;
         document.body.appendChild(textarea);
         textarea.select();
         document.execCommand('copy');
         document.body.removeChild(textarea);
-        showToast('Copied ahmedhanan4@gmail.com to clipboard!');
+        showToast('Copied ahmedhanan4@gmail.com to clipboard');
       });
     });
   });
@@ -393,11 +523,11 @@ function showToast(message) {
 
   setTimeout(() => {
     toast.classList.remove('visible');
-  }, 3200);
+  }, 3000);
 }
 
 /* ==========================================================================
-   8. SMOOTH SCROLLING ENHANCEMENT
+   10. SMOOTH SCROLLING ENHANCEMENT
    ========================================================================== */
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -407,7 +537,7 @@ function initSmoothScroll() {
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         e.preventDefault();
-        const navHeight = 72;
+        const navHeight = 68;
         const targetPos = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
         window.scrollTo({
           top: targetPos,
@@ -418,9 +548,8 @@ function initSmoothScroll() {
   });
 }
 
-
 /* ==========================================================================
-   9. REPOSITORY DIRECTORY SEARCH & LANGUAGE FILTERING
+   11. REPOSITORY DIRECTORY SEARCH & LANGUAGE FILTERING
    ========================================================================== */
 function initRepoSearch() {
   const searchInput = document.getElementById('repo-search-input');
@@ -439,9 +568,14 @@ function initRepoSearch() {
 
     cards.forEach((card) => {
       const cardLang = card.getAttribute('data-lang') || '';
-      const cardSearchText = (card.getAttribute('data-search') || '') + ' ' + (card.querySelector('.repo-dir-name')?.textContent || '') + ' ' + (card.querySelector('.repo-dir-desc')?.textContent || '');
+      const cardSearchText =
+        (card.getAttribute('data-search') || '') +
+        ' ' +
+        (card.querySelector('.repo-dir-name')?.textContent || '') +
+        ' ' +
+        (card.querySelector('.repo-dir-desc')?.textContent || '');
 
-      const matchesLang = (currentLang === 'all') || (cardLang === currentLang);
+      const matchesLang = currentLang === 'all' || cardLang === currentLang;
       const matchesSearch = !query || cardSearchText.toLowerCase().includes(query);
 
       if (matchesLang && matchesSearch) {
@@ -473,3 +607,12 @@ function initRepoSearch() {
     });
   });
 }
+
+
+window.copyTerminalCmd = function () {
+  navigator.clipboard.writeText('curl -s https://ahmed-hannan.github.io/resume').then(() => {
+    showToast('Copied curl command to clipboard');
+  }).catch(() => {
+    showToast('Copied curl command to clipboard');
+  });
+};

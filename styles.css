@@ -1613,3 +1613,108 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ==========================================================================
+   INTERACTIVE SPOTLIGHT & SCROLL REVEAL EFFECTS
+   ========================================================================== */
+
+/* Card Mouse Spotlight illumination (Linear / Vercel style) */
+.project-card,
+.repo-dir-card,
+.timeline-card,
+.skill-category-card,
+.cv-card,
+.contact-channel-card,
+.contact-form-card {
+  position: relative;
+}
+
+.project-card::after,
+.repo-dir-card::after,
+.timeline-card::after,
+.skill-category-card::after,
+.cv-card::after,
+.contact-channel-card::after,
+.contact-form-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    320px circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
+    rgba(185, 49, 63, 0.14),
+    transparent 75%
+  );
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.project-card:hover::after,
+.repo-dir-card:hover::after,
+.timeline-card:hover::after,
+.skill-category-card:hover::after,
+.cv-card:hover::after,
+.contact-channel-card:hover::after,
+.contact-form-card:hover::after {
+  opacity: 1;
+}
+
+/* Ensure child content stays above spotlight */
+.project-card > *,
+.repo-dir-card > *,
+.timeline-card > *,
+.skill-category-card > *,
+.cv-card > *,
+.contact-channel-card > *,
+.contact-form-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Scroll Reveal Animations */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Technical Terminal Micro-Pill in Hero */
+.hero-terminal-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 1.5rem;
+}
+
+.hero-terminal-pill code {
+  color: var(--accent-red-hover);
+}
+
+.hero-terminal-pill .copy-cmd-btn {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  padding: 2px 4px;
+  font-size: 0.78rem;
+  transition: color var(--transition-fast);
+}
+
+.hero-terminal-pill .copy-cmd-btn:hover {
+  color: #ffffff;
+}
