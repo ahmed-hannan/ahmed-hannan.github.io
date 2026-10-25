@@ -11,9 +11,9 @@ Resume / CV: https://ahmed-hannan.github.io/assets/Ahmed_Hannan_Resume.pdf
 ================================================================================
 
 [SUMMARY]
-Software Engineer and Computer Science graduate (FAST-NUCES) with a proven
+Software Engineer and Computer Scientist (FAST-NUCES) with a demonstrated
 record of shipping concurrent, production web and mobile platforms alongside
-cutting-edge applied research in Multimodal Generative AI and High-Performance
+applied research in Multimodal Generative AI and High-Performance
 GPU Computing. Awarded official Performance Certificate at EmpowerBits.
 
 [EXPERIENCE]
