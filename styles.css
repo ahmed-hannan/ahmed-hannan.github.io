@@ -324,19 +324,27 @@ ul {
 }
 
 .brand-badge {
-  width: 32px;
-  height: 32px;
-  border-radius: var(--radius-md);
-  background: var(--accent-red);
+  width: 34px;
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  font-family: var(--font-mono);
-  font-weight: 800;
-  font-size: 0.88rem;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition-fast), filter var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.brand-badge img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: inherit;
+}
+
+.nav-brand:hover .brand-badge,
+.footer-brand-title:hover .brand-badge {
+  transform: translateY(-1px) scale(1.06);
+  filter: drop-shadow(0 4px 14px rgba(185, 49, 63, 0.45));
 }
 
 .nav-menu {
