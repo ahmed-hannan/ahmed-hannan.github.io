@@ -61,7 +61,7 @@
   <main>
     <section class="hero" id="hero">
       <canvas id="hero-canvas"></canvas>
-      <div class="container">
+      <div class="container hero-container">
         <div class="hero-content">
           <div class="hero-pill">
             <span class="status-dot"></span>
@@ -123,6 +123,44 @@
               <div class="stat-number" data-target="1">1<span>x</span></div>
               <div class="stat-label">Performance Award Winner</div>
             </div>
+          </div>
+        </div>
+
+        <!-- Profile Visual Column -->
+        <div class="hero-portrait-wrapper">
+          <div class="portrait-card">
+            <!-- Top technical HUD accents -->
+            <div class="portrait-hud-header">
+              <span class="hud-tag"><i class="fa-solid fa-code"></i> AHMED HANNAN</span>
+              <span class="hud-status"><span class="status-dot"></span> FAST-NUCES '26</span>
+            </div>
+
+            <!-- Portrait Frame -->
+            <div class="portrait-frame">
+              <picture>
+                <source srcset="assets/formalpic.webp" type="image/webp">
+                <img src="assets/formalpic.png" alt="Ahmed Hannan — Software Engineer &amp; AI Researcher" class="portrait-img" loading="eager" width="420" height="428">
+              </picture>
+              <div class="portrait-gradient-overlay"></div>
+            </div>
+
+            <!-- Bottom Floating HUD Badge -->
+            <div class="portrait-hud-footer">
+              <div class="portrait-identity">
+                <h3 class="portrait-name">Ahmed Hannan</h3>
+                <p class="portrait-title">Software Engineer &amp; AI Researcher</p>
+              </div>
+              <div class="portrait-specs">
+                <span class="spec-pill"><i class="fa-solid fa-location-dot"></i> Islamabad</span>
+                <span class="spec-pill" style="color: var(--accent-red-hover);"><i class="fa-solid fa-award"></i> EmpowerBits</span>
+              </div>
+            </div>
+
+            <!-- Subtle corner brackets for high-tech architectural frame -->
+            <div class="corner-bracket top-left"></div>
+            <div class="corner-bracket top-right"></div>
+            <div class="corner-bracket bottom-left"></div>
+            <div class="corner-bracket bottom-right"></div>
           </div>
         </div>
       </div>
