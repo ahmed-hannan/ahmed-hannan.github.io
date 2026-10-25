@@ -7,7 +7,7 @@ Phone:      +92 333 149 5251
 LinkedIn:   https://linkedin.com/in/ahmedhannan2
 GitHub:     https://github.com/ahmed-hannan
 Website:    https://ahmed-hannan.github.io
-Master CV:  https://ahmed-hannan.github.io/assets/Ahmed_Hannan_Resume.pdf
+Resume / CV: https://ahmed-hannan.github.io/assets/Ahmed_Hannan_Resume.pdf
 ================================================================================
 
 [SUMMARY]
@@ -57,5 +57,5 @@ GPU Computing. Awarded official Performance Certificate at EmpowerBits.
 6. GoMatch: Real-Time Geospatial Ride-Sharing (Flutter, Django, WebSockets)
 7. QuizVerse: Full-Stack Examination Management Platform (OAuth, JWT, MERN)
 
-Full 2-Page Master CV PDF: https://ahmed-hannan.github.io/assets/Ahmed_Hannan_Resume.pdf
+Full CV (PDF): https://ahmed-hannan.github.io/assets/Ahmed_Hannan_Resume.pdf
 ================================================================================
