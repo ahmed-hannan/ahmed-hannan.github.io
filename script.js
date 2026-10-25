@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initEmailCopy();
   initSmoothScroll();
+  initRepoSearch();
 });
 
 /* ==========================================================================
@@ -413,6 +414,62 @@ function initSmoothScroll() {
           behavior: 'smooth',
         });
       }
+    });
+  });
+}
+
+
+/* ==========================================================================
+   9. REPOSITORY DIRECTORY SEARCH & LANGUAGE FILTERING
+   ========================================================================== */
+function initRepoSearch() {
+  const searchInput = document.getElementById('repo-search-input');
+  const langBtns = document.querySelectorAll('.repo-lang-btn');
+  const cards = document.querySelectorAll('.repo-dir-card');
+  const countBadge = document.getElementById('repo-count-badge');
+
+  if (!cards.length) return;
+
+  let currentLang = 'all';
+  let searchQuery = '';
+
+  function filterRepos() {
+    let visibleCount = 0;
+    const query = searchQuery.trim().toLowerCase();
+
+    cards.forEach((card) => {
+      const cardLang = card.getAttribute('data-lang') || '';
+      const cardSearchText = (card.getAttribute('data-search') || '') + ' ' + (card.querySelector('.repo-dir-name')?.textContent || '') + ' ' + (card.querySelector('.repo-dir-desc')?.textContent || '');
+
+      const matchesLang = (currentLang === 'all') || (cardLang === currentLang);
+      const matchesSearch = !query || cardSearchText.toLowerCase().includes(query);
+
+      if (matchesLang && matchesSearch) {
+        card.classList.remove('hide');
+        visibleCount++;
+      } else {
+        card.classList.add('hide');
+      }
+    });
+
+    if (countBadge) {
+      countBadge.textContent = `Showing ${visibleCount} of ${cards.length} repositories`;
+    }
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      filterRepos();
+    });
+  }
+
+  langBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      langBtns.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentLang = btn.getAttribute('data-lang') || 'all';
+      filterRepos();
     });
   });
 }
