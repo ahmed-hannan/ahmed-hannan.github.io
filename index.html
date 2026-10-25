@@ -98,8 +98,8 @@
 
           <div class="hero-stats">
             <div class="stat-item">
-              <div class="stat-number" data-target="11">11<span>+</span></div>
-              <div class="stat-label">Production &amp; Research Projects</div>
+              <div class="stat-number" data-target="18">18<span>+</span></div>
+              <div class="stat-label">Public GitHub Repositories</div>
             </div>
             <div class="stat-item">
               <div class="stat-number" data-target="2">2<span>+</span></div>
@@ -664,6 +664,424 @@
           </article>
 
         </div>
+        <!-- All Public Repositories Directory -->
+        <div class="repo-directory-controls" style="margin-top: 5rem;">
+          <div style="text-align: center; margin-bottom: 1rem;">
+            <div class="section-tag">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub Ecosystem</span>
+            </div>
+            <h3 style="font-size: 2rem; color: #ffffff; margin-bottom: 0.5rem;">
+              All Public <span>Repositories</span>
+            </h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Direct access to all 18 open-source repositories on my GitHub profile. Search by keyword or filter by language.
+            </p>
+          </div>
+
+          <div class="repo-search-wrapper">
+            <i class="fa-solid fa-magnifying-glass repo-search-icon"></i>
+            <input type="text" id="repo-search-input" class="repo-search-input" placeholder="Search 18 repositories by name, language, topic, or keyword..." aria-label="Search repositories">
+          </div>
+
+          <div class="repo-directory-meta">
+            <div class="repo-lang-tags">
+              <button class="repo-lang-btn active" data-lang="all">All (18)</button>
+              <button class="repo-lang-btn" data-lang="python">Python</button>
+              <button class="repo-lang-btn" data-lang="cpp">C / C++</button>
+              <button class="repo-lang-btn" data-lang="csharp">C#</button>
+              <button class="repo-lang-btn" data-lang="cuda">CUDA</button>
+              <button class="repo-lang-btn" data-lang="dart">Dart</button>
+              <button class="repo-lang-btn" data-lang="assembly">Assembly</button>
+              <button class="repo-lang-btn" data-lang="web">Web</button>
+            </div>
+            <div id="repo-count-badge" style="font-family: var(--font-mono); color: var(--accent-red); font-size: 0.85rem;">
+              Showing 18 of 18 repositories
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-directory-grid" id="repo-directory-grid">
+
+          <!-- 1. Pose2Play -->
+          <div class="repo-dir-card" data-lang="csharp" data-search="pose2play c# unity vr rehabilitation mediapipe yolov8 computer vision biomechanics">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/Pose2Play" target="_blank" rel="noopener noreferrer">Pose2Play</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">VR rehabilitation platform combining Unity XR with real-time AI pose detection for biomechanical tracking and exercise correction via low-latency IPC.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-csharp"></span> C#</span>
+              <a href="https://github.com/ahmed-hannan/Pose2Play" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. multimodal-rag-semantic-search -->
+          <div class="repo-dir-card" data-lang="python" data-search="multimodal-rag-semantic-search python jupyter gemma 3 faiss clip cross-encoder bert-tiny amazon esci">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/multimodal-rag-semantic-search" target="_blank" rel="noopener noreferrer">multimodal-rag-semantic-search</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">Multimodal RAG with vision-language embeddings &amp; Gemma 3, paired with semantic product search on Amazon ESCI using fine-tuned BERT-Tiny.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-python"></span> Python / Jupyter</span>
+              <a href="https://github.com/ahmed-hannan/multimodal-rag-semantic-search" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. crag-advanced-rag-pipelines -->
+          <div class="repo-dir-card" data-lang="python" data-search="crag-advanced-rag-pipelines python meta crag rag-fusion hyde graph rag rrr flask react langchain">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/crag-advanced-rag-pipelines" target="_blank" rel="noopener noreferrer">crag-advanced-rag-pipelines</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">Advanced RAG pipelines (RAG Fusion, HyDE, CRAG, Graph RAG, RRR) evaluated on Meta CRAG benchmark with a React/Flask web interface.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-python"></span> Python</span>
+              <a href="https://github.com/ahmed-hannan/crag-advanced-rag-pipelines" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. Neural-Network-Acceleration -->
+          <div class="repo-dir-card" data-lang="cuda" data-search="neural-network-acceleration cuda c++ gpu parallel gemm tensor cores shared memory deep learning">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/Neural-Network-Acceleration" target="_blank" rel="noopener noreferrer">Neural-Network-Acceleration</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">High-performance GPU forward/backward GEMM routines written in CUDA C++ utilizing 2D shared memory block tiling and Tensor Cores.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-cuda"></span> CUDA C++</span>
+              <a href="https://github.com/ahmed-hannan/Neural-Network-Acceleration" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 5. cnn-sequence-autoregressive-models -->
+          <div class="repo-dir-card" data-lang="python" data-search="cnn-sequence-autoregressive-models python cifar-10 shakespeare rnn lstm pixelcnn pixelrnn generative deep learning">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/cnn-sequence-autoregressive-models" target="_blank" rel="noopener noreferrer">cnn-sequence-autoregressive-models</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">CIFAR-10 CNN feature map ablations, Shakespeare Next-Word LSTM RNN, and PixelCNN (Type A/B causal masking) image density modeling.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-python"></span> Python</span>
+              <a href="https://github.com/ahmed-hannan/cnn-sequence-autoregressive-models" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 6. GoMatch -->
+          <div class="repo-dir-card" data-lang="dart" data-search="gomatch dart flutter django uber ride sharing websockets geolocation mobile app">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/GoMatch" target="_blank" rel="noopener noreferrer">GoMatch</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">On-demand ride-sharing mobile application with real-time driver-rider geolocation matching, WebSocket telemetry, and turn-by-turn routing.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-dart"></span> Dart / Flutter</span>
+              <a href="https://github.com/ahmed-hannan/GoMatch" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 7. QuizVerse -->
+          <div class="repo-dir-card" data-lang="web" data-search="quizverse vue node express mongodb oauth google quiz platform fullstack">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/QuizVerse" target="_blank" rel="noopener noreferrer">QuizVerse</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">Web application for creating, sharing, and taking interactive quizzes with local and Google OAuth, user profiles, and admin analytics.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-vue"></span> Vue / Node / Mongo</span>
+              <a href="https://github.com/ahmed-hannan/QuizVerse" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 8. GhazalaBukhari -->
+          <div class="repo-dir-card" data-lang="web" data-search="ghazalabukhari react vite css luxury fashion portfolio designer lookbook frontend">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/GhazalaBukhari" target="_blank" rel="noopener noreferrer">GhazalaBukhari</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">Modern portfolio showcase for luxury fashion designer Ghazala Bukhari, built with React, Vite, and responsive CSS animations.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-css"></span> React / Vite</span>
+              <a href="https://github.com/ahmed-hannan/GhazalaBukhari" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 9. PacmanMultithreading -->
+          <div class="repo-dir-card" data-lang="cpp" data-search="pacmanmultithreading c++ sfml multithreading threads mutex concurrency pacman game engine">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/PacmanMultithreading" target="_blank" rel="noopener noreferrer">PacmanMultithreading</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">Multi-threaded Pacman game engine in C++ and SFML implementing concurrent ghost AI behaviors, thread locks, and synchronization.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-cpp"></span> C++ / SFML</span>
+              <a href="https://github.com/ahmed-hannan/PacmanMultithreading" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 10. x86Pacman -->
+          <div class="repo-dir-card" data-lang="assembly" data-search="x86pacman assembly x86 masm bios interrupts terminal pacman low level graphics">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/x86Pacman" target="_blank" rel="noopener noreferrer">x86Pacman</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">Terminal-based arcade Pacman engine written in low-level x86 Assembly utilizing BIOS video interrupts and keyboard port scanning.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-assembly"></span> x86 Assembly</span>
+              <a href="https://github.com/ahmed-hannan/x86Pacman" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 11. i220943_i221003_CompilerConst_Phase2 -->
+          <div class="repo-dir-card" data-lang="cpp" data-search="compiler construction c++ lexical analysis parser ast semantic validation grammar">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/i220943_i221003_CompilerConst_Phase2" target="_blank" rel="noopener noreferrer">CompilerConst_Phase2</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">Compiler construction pipeline featuring lexical scanning, syntax parser tables (LL/LR), AST generation, and semantic validation in C++.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-cpp"></span> C++ / Compilers</span>
+              <a href="https://github.com/ahmed-hannan/i220943_i221003_CompilerConst_Phase2" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 12. ServerClientCommunication -->
+          <div class="repo-dir-card" data-lang="cpp" data-search="serverclientcommunication c++ linux sockets networking ipc client server tcp">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/ServerClientCommunication" target="_blank" rel="noopener noreferrer">ServerClientCommunication</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">Linux terminal socket networking engine implementing concurrent client-server communication and bidirectional message exchange.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-cpp"></span> C++ / Sockets</span>
+              <a href="https://github.com/ahmed-hannan/ServerClientCommunication" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 13. infoSec_A2 -->
+          <div class="repo-dir-card" data-lang="python" data-search="infosec_a2 python cryptography security ciphers des aes rsa encryption">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/infoSec_A2" target="_blank" rel="noopener noreferrer">infoSec_A2</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">Information security and applied cryptography algorithms: custom ciphers, key generation, entropy analysis, and security verification.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-python"></span> Python / Security</span>
+              <a href="https://github.com/ahmed-hannan/infoSec_A2" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 14. SpaceShooter -->
+          <div class="repo-dir-card" data-lang="cpp" data-search="spaceshooter c++ sfml 2d game engine linux ubuntu physics combat">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/SpaceShooter" target="_blank" rel="noopener noreferrer">SpaceShooter</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">2D arcade space shooter developed in C++ and SFML on Ubuntu featuring particle physics, velocity simulation, and collision loops.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-cpp"></span> C++ / SFML</span>
+              <a href="https://github.com/ahmed-hannan/SpaceShooter" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 15. Tetris -->
+          <div class="repo-dir-card" data-lang="cpp" data-search="tetris c matrix 2d rotation collision game terminal lowlevel">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/Tetris" target="_blank" rel="noopener noreferrer">Tetris</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">Classic grid-based Tetris implemented in C with 2D matrix transformation algorithms, boundary collision detection, and score tracking.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-c"></span> C</span>
+              <a href="https://github.com/ahmed-hannan/Tetris" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 16. dataprojectSummers -->
+          <div class="repo-dir-card" data-lang="cpp" data-search="dataprojectsummers c++ data structures avl trees b-trees graphs file indexing">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/dataprojectSummers" target="_blank" rel="noopener noreferrer">dataprojectSummers</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">Advanced data structures project in C++ implementing self-balancing AVL Trees, B-Trees, graph traversal, and fast file indexing.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-cpp"></span> C++ / Data Structs</span>
+              <a href="https://github.com/ahmed-hannan/dataprojectSummers" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 17. SummersData -->
+          <div class="repo-dir-card" data-lang="cpp" data-search="summersdata c++ algorithms benchmarking data structures sorting search">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/SummersData" target="_blank" rel="noopener noreferrer">SummersData</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">Algorithmic complexity benchmark suite in C++ evaluating search trees, hashing collisions, and sorting efficiency under heavy loads.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-cpp"></span> C++ / Benchmarks</span>
+              <a href="https://github.com/ahmed-hannan/SummersData" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 18. HangmanBasic -->
+          <div class="repo-dir-card" data-lang="cpp" data-search="hangmanbasic c++ string parsing console game algorithms dictionary">
+            <div>
+              <div class="repo-dir-header">
+                <i class="fa-brands fa-github repo-dir-icon"></i>
+                <h4 class="repo-dir-name">
+                  <a href="https://github.com/ahmed-hannan/HangmanBasic" target="_blank" rel="noopener noreferrer">HangmanBasic</a>
+                </h4>
+              </div>
+              <p class="repo-dir-desc">Interactive console word guessing engine in C++ demonstrating dynamic string parsing, character arrays, and game state loops.</p>
+            </div>
+            <div class="repo-dir-footer">
+              <span class="repo-dir-lang"><span class="lang-dot lang-dot-cpp"></span> C++</span>
+              <a href="https://github.com/ahmed-hannan/HangmanBasic" target="_blank" rel="noopener noreferrer" class="repo-dir-link">
+                <span>View Repo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- GitHub Profile Banner -->
+        <div class="repo-cta-banner">
+          <div>
+            <h4 style="font-size: 1.25rem; color: #ffffff; margin-bottom: 0.35rem;">
+              <i class="fa-brands fa-github" style="color: var(--accent-red); margin-right: 0.5rem;"></i>
+              Looking for something specific?
+            </h4>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Explore all repositories, active forks, contributions, and starred projects directly on GitHub.
+            </p>
+          </div>
+          <a href="https://github.com/ahmed-hannan?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Browse GitHub Profile</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
       </div>
     </section>
 
