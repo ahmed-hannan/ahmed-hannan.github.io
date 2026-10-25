@@ -98,7 +98,7 @@
 
           <div class="hero-stats">
             <div class="stat-item">
-              <div class="stat-number" data-target="10">10<span>+</span></div>
+              <div class="stat-number" data-target="11">11<span>+</span></div>
               <div class="stat-label">Production &amp; Research Projects</div>
             </div>
             <div class="stat-item">
@@ -118,8 +118,556 @@
       </div>
     </section>
 
+    <!-- Projects Showcase Section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span>Featured Work &amp; Research</span>
+          </div>
+          <h2 class="section-title">Engineered for <span>Scale &amp; Impact</span></h2>
+          <p class="section-description">
+            A curated showcase of production applications, distributed architectures, generative AI models, and accelerated GPU computing systems.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="project-filters" role="tablist">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+            <span>All Projects</span>
+            <span class="filter-count">(11)</span>
+          </button>
+          <button class="filter-btn" data-filter="ai-ml" role="tab" aria-selected="false">
+            <i class="fa-solid fa-brain"></i>
+            <span>AI / ML &amp; Vision</span>
+            <span class="filter-count">(5)</span>
+          </button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">
+            <i class="fa-solid fa-globe"></i>
+            <span>Full-Stack &amp; Web</span>
+            <span class="filter-count">(5)</span>
+          </button>
+          <button class="filter-btn" data-filter="systems" role="tab" aria-selected="false">
+            <i class="fa-solid fa-microchip"></i>
+            <span>Systems &amp; HPC</span>
+            <span class="filter-count">(3)</span>
+          </button>
+          <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <span>Mobile Engineering</span>
+            <span class="filter-count">(2)</span>
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Project 1: Pose2Play (FYP) -->
+          <article class="project-card" data-category="ai-ml systems">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-tag">
+                  <i class="fa-solid fa-vr-cardboard"></i> FYP &bull; Computer Vision
+                </span>
+                <div class="project-actions">
+                  <a href="https://github.com/ahmed-hannan/Pose2Play" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Pose2Play GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="project-title">
+                <a href="https://github.com/ahmed-hannan/Pose2Play" target="_blank" rel="noopener noreferrer">Pose2Play: VR Physical Therapy Platform</a>
+              </h3>
+
+              <p class="project-description">
+                Real-time physical therapy rehabilitation suite integrating computer vision pose estimation via YOLOv8 with interactive VR gameplay in Unity. Tracks 3D joint kinematics, rep counts, and exercise posture accuracy in real-time.
+              </p>
+
+              <div class="project-highlight">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Sub-30ms pose estimation pipeline streaming 3D skeletal data to Unity VR engine.</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-tags">
+                <span class="tech-tag">YOLOv8</span>
+                <span class="tech-tag">Unity VR</span>
+                <span class="tech-tag">Computer Vision</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PyTorch</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/ahmed-hannan/Pose2Play" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+                  <span>View Repository</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Multimodal RAG & Semantic Search -->
+          <article class="project-card" data-category="ai-ml">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-tag">
+                  <i class="fa-solid fa-brain"></i> Multimodal AI &bull; LLMs
+                </span>
+                <div class="project-actions">
+                  <a href="https://github.com/ahmed-hannan/multimodal-rag-semantic-search" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Multimodal RAG GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="project-title">
+                <a href="https://github.com/ahmed-hannan/multimodal-rag-semantic-search" target="_blank" rel="noopener noreferrer">Multimodal RAG &amp; Gemma-3 Search Engine</a>
+              </h3>
+
+              <p class="project-description">
+                End-to-end multimodal retrieval-augmented generation engine powered by Gemma-3-1b-it FP16. Features hybrid FAISS indexing (CLIP visual embeddings + MiniLM text embeddings) and fine-tuned BERT-Tiny cross-encoder reranking on 1.1M Amazon ESCI queries.
+              </p>
+
+              <div class="project-highlight">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Fine-tuned Cross-Encoder on 1.1M ESCI records; BM25 + FAISS hybrid retrieval with Reciprocal Rank Fusion.</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-tags">
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">Gemma-3</span>
+                <span class="tech-tag">FAISS</span>
+                <span class="tech-tag">CLIP</span>
+                <span class="tech-tag">Cross-Encoder</span>
+                <span class="tech-tag">HuggingFace</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/ahmed-hannan/multimodal-rag-semantic-search" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+                  <span>View Repository</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: CRAG Advanced RAG Pipelines -->
+          <article class="project-card" data-category="ai-ml web">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-tag">
+                  <i class="fa-solid fa-network-wired"></i> Benchmarking &bull; RAG
+                </span>
+                <div class="project-actions">
+                  <a href="https://github.com/ahmed-hannan/crag-advanced-rag-pipelines" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="CRAG Pipelines GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="project-title">
+                <a href="https://github.com/ahmed-hannan/crag-advanced-rag-pipelines" target="_blank" rel="noopener noreferrer">CRAG: Corrective &amp; Multi-Pipeline RAG</a>
+              </h3>
+
+              <p class="project-description">
+                Systematic implementation and comparative benchmarking of 7 retrieval architectures against the Meta CRAG dataset. Implements Corrective RAG with web fallbacks, RAG-Fusion, HyDE, Graph RAG, and Rewrite-Retrieve-Read with a full-stack Flask/React dashboard.
+              </p>
+
+              <div class="project-highlight">
+                <i class="fa-solid fa-database"></i>
+                <span>Evaluated across 5 quantitative metrics with full Flask REST API and React/Vite visualization suite.</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-tags">
+                <span class="tech-tag">Meta CRAG</span>
+                <span class="tech-tag">LangChain</span>
+                <span class="tech-tag">Graph RAG</span>
+                <span class="tech-tag">HyDE</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">React</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/ahmed-hannan/crag-advanced-rag-pipelines" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+                  <span>View Repository</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: CUDA Neural Network Acceleration -->
+          <article class="project-card" data-category="systems">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-tag">
+                  <i class="fa-solid fa-microchip"></i> HPC &bull; CUDA C++
+                </span>
+                <div class="project-actions">
+                  <a href="https://github.com/ahmed-hannan/Neural-Network-Acceleration" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="CUDA NN Acceleration GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="project-title">
+                <a href="https://github.com/ahmed-hannan/Neural-Network-Acceleration" target="_blank" rel="noopener noreferrer">CUDA Deep Learning Kernel Acceleration</a>
+              </h3>
+
+              <p class="project-description">
+                High-performance GPU implementation of deep learning forward and backward propagation routines written from scratch in CUDA C++. Employs shared memory tiling, warp shuffling, thread divergence minimization, and Tensor Core integration.
+              </p>
+
+              <div class="project-highlight">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span>Achieved 12x speedup over CPU GEMM kernels via 2D shared memory block tiling and coalesced memory access.</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-tags">
+                <span class="tech-tag">CUDA C++</span>
+                <span class="tech-tag">Tensor Cores</span>
+                <span class="tech-tag">GEMM</span>
+                <span class="tech-tag">GPU Parallelism</span>
+                <span class="tech-tag">Shared Memory</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/ahmed-hannan/Neural-Network-Acceleration" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+                  <span>View Repository</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: CNN, Sequence & Autoregressive Models -->
+          <article class="project-card" data-category="ai-ml">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-tag">
+                  <i class="fa-solid fa-atom"></i> Deep Learning &bull; Generative
+                </span>
+                <div class="project-actions">
+                  <a href="https://github.com/ahmed-hannan/cnn-sequence-autoregressive-models" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Autoregressive Models GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="project-title">
+                <a href="https://github.com/ahmed-hannan/cnn-sequence-autoregressive-models" target="_blank" rel="noopener noreferrer">Deep Vision &amp; Autoregressive Generative Suite</a>
+              </h3>
+
+              <p class="project-description">
+                Modular PyTorch implementations of foundational neural architectures: CIFAR-10 CNN with layer activation maps, Shakespeare character-level LSTM next-word predictor, and PixelCNN (Type A/B causal masking, RowLSTM, and Diagonal BiLSTM) for density estimation.
+              </p>
+
+              <div class="project-highlight">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Strict causality preservation via masked 2D convolutions and comparative receptive field analysis.</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-tags">
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">PixelCNN</span>
+                <span class="tech-tag">LSTM / RNN</span>
+                <span class="tech-tag">Computer Vision</span>
+                <span class="tech-tag">Autoregressive</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/ahmed-hannan/cnn-sequence-autoregressive-models" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+                  <span>View Repository</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: GoMatch Ride-Sharing -->
+          <article class="project-card" data-category="web mobile">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-tag">
+                  <i class="fa-solid fa-car"></i> Full-Stack &bull; Mobile
+                </span>
+                <div class="project-actions">
+                  <a href="https://github.com/ahmed-hannan/GoMatch" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GoMatch GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="project-title">
+                <a href="https://github.com/ahmed-hannan/GoMatch" target="_blank" rel="noopener noreferrer">GoMatch: Real-Time Geospatial Ride Sharing</a>
+              </h3>
+
+              <p class="project-description">
+                Production-styled on-demand ride-sharing mobile application built with Flutter/Dart and a Django REST API. Features real-time driver-rider geolocation matching, WebSocket telemetry streaming, automated fare estimation, and interactive turn-by-turn routing.
+              </p>
+
+              <div class="project-highlight">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Sub-second driver matching using PostGIS spatial queries and bidirectional WebSocket coordinates stream.</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">PostGIS</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/ahmed-hannan/GoMatch" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+                  <span>View Repository</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 7: QuizVerse Assessment Platform -->
+          <article class="project-card" data-category="web">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-tag">
+                  <i class="fa-solid fa-graduation-cap"></i> Full-Stack &bull; MERN
+                </span>
+                <div class="project-actions">
+                  <a href="https://github.com/ahmed-hannan/QuizVerse" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="QuizVerse GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="project-title">
+                <a href="https://github.com/ahmed-hannan/QuizVerse" target="_blank" rel="noopener noreferrer">QuizVerse: Interactive Assessment Platform</a>
+              </h3>
+
+              <p class="project-description">
+                Scalable web assessment platform built with React, Node.js, Express, and MongoDB. Integrates Google OAuth 2.0 authentication, role-based access control (RBAC), timer-based quiz engines, live score calculation, and real-time student analytics.
+              </p>
+
+              <div class="project-highlight">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>JWT session security, Google OAuth, and granular teacher/student permissions with aggregated analytics.</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">OAuth 2.0</span>
+                <span class="tech-tag">JWT</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/ahmed-hannan/QuizVerse" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+                  <span>View Repository</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 8: Ghazala Bukhari Brand Portfolio -->
+          <article class="project-card" data-category="web">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-tag">
+                  <i class="fa-solid fa-gem"></i> Client Commercial &bull; React
+                </span>
+                <div class="project-actions">
+                  <a href="https://github.com/ahmed-hannan/GhazalaBukhari" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Ghazala Bukhari GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="project-title">
+                <a href="https://github.com/ahmed-hannan/GhazalaBukhari" target="_blank" rel="noopener noreferrer">Ghazala Bukhari: Commercial Brand Showcase</a>
+              </h3>
+
+              <p class="project-description">
+                Commercial web showcase and product catalog designed for luxury fashion brand Ghazala Bukhari. Built in React and Vite with high-aesthetic typography, dynamic filterable lookbooks, responsive image optimization, and fluid micro-interactions.
+              </p>
+
+              <div class="project-highlight">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span>Lighthouse 98+ performance score with responsive image pipelines and modern CSS glassmorphism.</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Modern UI</span>
+                <span class="tech-tag">SEO</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/ahmed-hannan/GhazalaBukhari" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+                  <span>View Repository</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 9: ParButterfly Parallel Graph Motif Mining -->
+          <article class="project-card" data-category="systems">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-tag">
+                  <i class="fa-solid fa-circle-nodes"></i> HPC &bull; OpenMP &bull; MPI
+                </span>
+                <div class="project-actions">
+                  <a href="https://github.com/ahmed-hannan/ParButterfly" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="ParButterfly GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="project-title">
+                <a href="https://github.com/ahmed-hannan/ParButterfly" target="_blank" rel="noopener noreferrer">ParButterfly: Billion-Edge Graph Motif Mining</a>
+              </h3>
+
+              <p class="project-description">
+                High-performance parallel algorithm for counting butterfly motifs in massive bipartite graph networks. Implemented using OpenMP shared-memory multithreading and MPI distributed computing with atomic synchronization and vertex sorting optimizations.
+              </p>
+
+              <div class="project-highlight">
+                <i class="fa-solid fa-server"></i>
+                <span>Scales near-linearly across multi-core architectures on large web and bipartite social networks.</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-tags">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">OpenMP</span>
+                <span class="tech-tag">MPI</span>
+                <span class="tech-tag">Graph Theory</span>
+                <span class="tech-tag">Parallel Algorithms</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/ahmed-hannan/ParButterfly" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+                  <span>View Repository</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 10: SalesPro Enterprise Mobile App -->
+          <article class="project-card" data-category="mobile web">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-tag">
+                  <i class="fa-solid fa-chart-pie"></i> Enterprise Mobile &bull; Flutter
+                </span>
+                <div class="project-actions">
+                  <a href="https://github.com/ahmed-hannan/SalesPro" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="SalesPro GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="project-title">
+                <a href="https://github.com/ahmed-hannan/SalesPro" target="_blank" rel="noopener noreferrer">SalesPro: Cross-Platform Field Sales Platform</a>
+              </h3>
+
+              <p class="project-description">
+                Cross-platform enterprise mobile solution developed in Flutter for field sales agents and distributors. Includes offline-first SQLite synchronization, catalog browsing, order fulfillment lifecycles, and sales performance telemetry.
+              </p>
+
+              <div class="project-highlight">
+                <i class="fa-solid fa-cloud-arrow-down"></i>
+                <span>Robust offline-first architecture with automatic background synchronization when reconnecting.</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">State Management</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/ahmed-hannan/SalesPro" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+                  <span>View Repository</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 11: Project Montage Multi-Agent Studio -->
+          <article class="project-card" data-category="ai-ml">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-tag">
+                  <i class="fa-solid fa-robot"></i> Multi-Agent &bull; LangGraph
+                </span>
+                <div class="project-actions">
+                  <a href="https://github.com/ahmed-hannan/Project-Montage" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Project Montage GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <h3 class="project-title">
+                <a href="https://github.com/ahmed-hannan/Project-Montage" target="_blank" rel="noopener noreferrer">Project Montage: Multi-Agent LLM Orchestration</a>
+              </h3>
+
+              <p class="project-description">
+                Autonomous multi-agent creative writing studio powered by LangGraph and Model Context Protocol (MCP). Coordinates specialized autonomous roles (Researcher, Plot Architect, Editor, Critic) via structured state machines and automated quality evaluation cycles.
+              </p>
+
+              <div class="project-highlight">
+                <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                <span>Graph-directed state transitions with cyclic agent feedback loops and deterministic validation gates.</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-tags">
+                <span class="tech-tag">LangGraph</span>
+                <span class="tech-tag">Multi-Agent Systems</span>
+                <span class="tech-tag">MCP</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">LLMs</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/ahmed-hannan/Project-Montage" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+                  <span>View Repository</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Placeholder Section Anchors for Navigation Testing -->
-    <section id="projects" class="section"></section>
     <section id="experience" class="section"></section>
     <section id="skills" class="section"></section>
     <section id="cv" class="section"></section>
