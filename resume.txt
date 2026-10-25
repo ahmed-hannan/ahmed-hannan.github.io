@@ -1,0 +1,61 @@
+================================================================================
+AHMED HANNAN — SOFTWARE ENGINEER & AI RESEARCHER
+================================================================================
+Location:   Islamabad, Pakistan (Open to Relocation & Remote Worldwide)
+Email:      ahmedhanan4@gmail.com
+Phone:      +92 333 149 5251
+LinkedIn:   https://linkedin.com/in/ahmedhannan2
+GitHub:     https://github.com/ahmed-hannan
+Website:    https://ahmed-hannan.github.io
+Master CV:  https://ahmed-hannan.github.io/assets/Ahmed_Hannan_Resume.pdf
+================================================================================
+
+[SUMMARY]
+Software Engineer and Computer Science graduate (FAST-NUCES) with a proven
+record of shipping concurrent, production web and mobile platforms alongside
+cutting-edge applied research in Multimodal Generative AI and High-Performance
+GPU Computing. Awarded official Performance Certificate at EmpowerBits.
+
+[EXPERIENCE]
+* EmpowerBits — Full-Stack Developer                       (06/2026 – Present)
+  - Engineered production web & mobile apps (iOS & Android) with concurrent users.
+  - Implemented reactive state management (Flutter, React) and low-latency APIs.
+  - Awarded Certificate of Excellence / Performance Award for sprint delivery.
+  - Tech: Flutter, Dart, React.js, Node.js, Python, PostgreSQL, WebSockets.
+
+* RedCoast — Full-Stack Software Engineer                  (06/2025 – 06/2026)
+  - Full-stack feature delivery, cutting query latency by 35%.
+  - Engineered automated BigQuery data ingestion pipelines for analytics.
+  - Automated regression testing using Selenium WebDriver and Jira CI/CD.
+  - Tech: React.js, Flutter, Django, Google BigQuery, PostgreSQL, Selenium.
+
+* National Center of AI (NCAI, NUST) — AI Research Intern   (08/2024 – 09/2024)
+  - Researched generative deep learning and vision-language alignment models.
+  - Benchmarked transformer architectures on distributed GPU clusters.
+
+* FAST-NUCES — Teaching Assistant, Computer Science        (06/2024 – 09/2024)
+  - Mentored 100+ students in C++, pointer arithmetic, memory & algorithms.
+
+[EDUCATION]
+* FAST - National University of Computer & Emerging Sciences (NUCES)
+  - Bachelor of Science in Computer Science (Graduation: June 2026)
+  - Coursework: Distributed Systems, High-Performance Computing, Deep Learning,
+    Generative AI, Computer Vision, Operating Systems, Algorithms, Networks.
+
+[TECHNICAL SKILLS]
+* Languages: Python, C/C++ (Modern/STL), C#, Dart, JavaScript, TypeScript, SQL, CUDA C
+* AI / ML: PyTorch, Gemma 3, HuggingFace, CLIP, FAISS, Cross-Encoder, YOLOv8, OpenCV
+* Full-Stack: React, Next.js, Node.js, Express, Django REST, Flask, Flutter, WebSockets
+* Systems: CUDA Kernels, Tensor Cores, OpenMP, MPI, Docker, BigQuery, PostgreSQL, Git
+
+[FEATURED REPOSITORIES (18 Total)]
+1. Pose2Play: Real-time YOLOv8 Computer Vision & Unity VR Platform (FYP)
+2. multimodal-rag-semantic-search: Gemma 3 FP16 + CLIP/MiniLM FAISS + ESCI 1.1M
+3. crag-advanced-rag-pipelines: Meta CRAG Benchmark (7 RAG Pipelines) + React
+4. Neural-Network-Acceleration: CUDA C++ Kernels + Tensor Cores (12x Speedup)
+5. ParButterfly: Billion-Edge Graph Motif Mining (OpenMP & MPI)
+6. GoMatch: Real-Time Geospatial Ride-Sharing (Flutter, Django, WebSockets)
+7. QuizVerse: Full-Stack Examination Management Platform (OAuth, JWT, MERN)
+
+Full 2-Page Master CV PDF: https://ahmed-hannan.github.io/assets/Ahmed_Hannan_Resume.pdf
+================================================================================
