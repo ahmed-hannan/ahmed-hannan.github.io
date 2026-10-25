@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="ahBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151722"/>
+      <stop offset="100%" stop-color="#0a0b0e"/>
+    </linearGradient>
+    <linearGradient id="ahCrimson" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e04354"/>
+      <stop offset="100%" stop-color="#b9313f"/>
+    </linearGradient>
+    <linearGradient id="ahBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.04)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Architectural Squircle Base -->
+  <rect x="4" y="4" width="92" height="92" rx="22" fill="url(#ahBg)" stroke="url(#ahBorder)" stroke-width="1.5"/>
+
+  <!-- Letter H: Structural Pillars (Crisp Off-White) -->
+  <line x1="28" y1="26" x2="28" y2="74" stroke="#f3f4f6" stroke-width="7" stroke-linecap="round"/>
+  <line x1="72" y1="26" x2="72" y2="74" stroke="#f3f4f6" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Shared Crossbar -->
+  <line x1="28" y1="52" x2="72" y2="52" stroke="#f3f4f6" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Letter A: Dynamic Tensor Apex (Matte Crimson) -->
+  <polyline points="28,74 50,23 72,74" fill="none" stroke="url(#ahCrimson)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Apex Focal Accent -->
+  <circle cx="50" cy="23" r="3.2" fill="#ffffff"/>
+</svg>
