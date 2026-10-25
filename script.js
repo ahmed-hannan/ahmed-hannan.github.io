@@ -610,7 +610,7 @@ function initRepoSearch() {
 
 
 window.copyTerminalCmd = function () {
-  navigator.clipboard.writeText('curl -s https://ahmed-hannan.github.io/resume').then(() => {
+  navigator.clipboard.writeText('curl -sL https://ahmed-hannan.github.io/resume.txt').then(() => {
     showToast('Copied curl command to clipboard');
   }).catch(() => {
     showToast('Copied curl command to clipboard');
