@@ -1042,10 +1042,213 @@
       </div>
     </section>
 
-    <!-- Placeholder Section Anchor for Navigation Testing -->
-    <section id="contact" class="section"></section>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Get In Touch</span>
+          </div>
+          <h2 class="section-title">Let's <span>Connect &amp; Collaborate</span></h2>
+          <p class="section-description">
+            Whether you have an engineering opportunity, a research inquiry, or a complex software system to architect &mdash; my inbox is open.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Channels List -->
+          <div class="contact-info-cards">
+            
+            <!-- Email Channel -->
+            <div class="contact-channel-card">
+              <div class="channel-meta">
+                <div class="channel-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="channel-details">
+                  <h4>Email Address</h4>
+                  <a href="mailto:ahmedhanan4@gmail.com">ahmedhanan4@gmail.com</a>
+                </div>
+              </div>
+              <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <button class="btn btn-sm btn-outline-red copy-email-btn" title="Copy email address" aria-label="Copy email address">
+                  <i class="fa-regular fa-copy"></i>
+                  <span>Copy</span>
+                </button>
+                <a href="mailto:ahmedhanan4@gmail.com" class="icon-btn" title="Send email" aria-label="Send email">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- LinkedIn Channel -->
+            <div class="contact-channel-card">
+              <div class="channel-meta">
+                <div class="channel-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="channel-details">
+                  <h4>Professional Network</h4>
+                  <a href="https://www.linkedin.com/in/ahmedhannan2" target="_blank" rel="noopener noreferrer">linkedin.com/in/ahmedhannan2</a>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/in/ahmedhannan2" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-red">
+                <span>Connect</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <!-- GitHub Channel -->
+            <div class="contact-channel-card">
+              <div class="channel-meta">
+                <div class="channel-icon">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="channel-details">
+                  <h4>Open Source &amp; Code</h4>
+                  <a href="https://github.com/ahmed-hannan" target="_blank" rel="noopener noreferrer">github.com/ahmed-hannan</a>
+                </div>
+              </div>
+              <a href="https://github.com/ahmed-hannan" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-red">
+                <span>Follow</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <!-- Location / Availability -->
+            <div class="contact-channel-card">
+              <div class="channel-meta">
+                <div class="channel-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="channel-details">
+                  <h4>Based In</h4>
+                  <span>Islamabad, Pakistan</span>
+                  <div style="font-size: 0.8rem; color: var(--accent-red); margin-top: 0.2rem;">
+                    <i class="fa-solid fa-earth-americas"></i> Open to Remote Worldwide &amp; Relocation
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick Message Form -->
+          <div class="contact-form-card">
+            <h3 class="contact-form-title">Send a Direct Message</h3>
+            <p class="contact-form-desc">Have a role, project, or question? Fill this out and it will launch your email client directly.</p>
+
+            <form onsubmit="handleContactSubmit(event)">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Jane Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. jane@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Software Engineer Opportunity / Project Inquiry" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Tell me about your team or project..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-brand-title">
+            <div class="brand-badge">AH</div>
+            <span>Ahmed Hannan</span>
+          </div>
+          <p class="footer-brand-desc">
+            Full-Stack Software Engineer &amp; AI Researcher. Specializing in high-concurrency production web/mobile systems, multimodal retrieval engines, and accelerated GPU computing.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <div class="footer-links-list">
+            <a href="#hero" class="footer-link">Home</a>
+            <a href="#projects" class="footer-link">Projects</a>
+            <a href="#experience" class="footer-link">Experience</a>
+            <a href="#skills" class="footer-link">Technical Skills</a>
+            <a href="#cv" class="footer-link">Resumes &amp; CV</a>
+            <a href="#contact" class="footer-link">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Connect</h4>
+          <div class="footer-links-list" style="margin-bottom: 1.5rem;">
+            <a href="mailto:ahmedhanan4@gmail.com" class="footer-link">
+              <i class="fa-solid fa-envelope" style="margin-right: 0.4rem; color: var(--accent-red);"></i> ahmedhanan4@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/ahmedhannan2" target="_blank" rel="noopener noreferrer" class="footer-link">
+              <i class="fa-brands fa-linkedin" style="margin-right: 0.4rem; color: var(--accent-red);"></i> LinkedIn
+            </a>
+            <a href="https://github.com/ahmed-hannan" target="_blank" rel="noopener noreferrer" class="footer-link">
+              <i class="fa-brands fa-github" style="margin-right: 0.4rem; color: var(--accent-red);"></i> GitHub
+            </a>
+          </div>
+          <div class="footer-social-row">
+            <a href="https://github.com/ahmed-hannan" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ahmedhannan2" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:ahmedhanan4@gmail.com" class="icon-btn" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Ahmed Hannan. Built with modern web standards.</div>
+        <a href="#hero" class="back-to-top">
+          <span>Back to top</span>
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
+  <script>
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contact-name').value;
+      const email = document.getElementById('contact-email').value;
+      const subject = document.getElementById('contact-subject').value;
+      const message = document.getElementById('contact-message').value;
+
+      const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+      const mailtoUrl = `mailto:ahmedhanan4@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+      window.location.href = mailtoUrl;
+    }
+  </script>
 </body>
 </html>
