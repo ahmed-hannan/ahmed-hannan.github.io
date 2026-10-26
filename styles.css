@@ -2004,3 +2004,119 @@ ul {
     margin: 0 auto;
   }
 }
+
+/* ==========================================================================
+   INTERACTIVE RESUME DOCUMENT VIEWER
+   ========================================================================== */
+.cv-document-viewer {
+  margin-top: 2.25rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 2rem;
+}
+
+.cv-viewer-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  background: rgba(14, 16, 23, 0.7);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.65rem 1.15rem;
+}
+
+.cv-viewer-status {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.cv-viewer-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--bg-surface);
+  padding: 0.25rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.cv-page-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.cv-page-btn:hover {
+  color: #ffffff;
+}
+
+.cv-page-btn.active {
+  background: var(--accent-red);
+  color: #ffffff;
+}
+
+.cv-sheets-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.25rem;
+}
+
+.cv-sheet-wrapper {
+  width: 100%;
+  max-width: 820px;
+  background: #0f1118;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7);
+  transition: border-color var(--transition-fast);
+}
+
+.cv-sheet-wrapper:hover {
+  border-color: rgba(185, 49, 63, 0.35);
+}
+
+.cv-sheet-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1.15rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: #141620;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cv-sheet-zoom {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color var(--transition-fast);
+}
+
+.cv-sheet-zoom:hover {
+  color: var(--accent-red);
+}
+
+.cv-sheet-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #ffffff;
+}
