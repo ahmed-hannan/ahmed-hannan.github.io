@@ -1,61 +1,117 @@
 ================================================================================
-AHMED HANNAN — SOFTWARE ENGINEER & AI RESEARCHER
+AHMED HANNAN — FULL-STACK SOFTWARE ENGINEER & AI RESEARCHER
 ================================================================================
-Location:   Islamabad, Pakistan (Open to Relocation & Remote Worldwide)
+Location:   Islamabad, Pakistan
 Email:      ahmedhanan4@gmail.com
 Phone:      +92 333 149 5251
 LinkedIn:   https://linkedin.com/in/ahmedhannan2
 GitHub:     https://github.com/ahmed-hannan
 Website:    https://ahmed-hannan.github.io
-Resume / CV: https://ahmed-hannan.github.io/assets/Ahmed_Hannan_Resume.pdf
+Full PDF:   https://ahmed-hannan.github.io/assets/Ahmed_Hannan_Resume.pdf
 ================================================================================
 
-[SUMMARY]
-Software Engineer and Computer Scientist (FAST-NUCES) with a demonstrated
-record of shipping concurrent, production web and mobile platforms alongside
-applied research in Multimodal Generative AI and High-Performance
-GPU Computing. Awarded official Performance Certificate at EmpowerBits.
-
-[EXPERIENCE]
-* EmpowerBits — Full-Stack Developer                       (06/2026 – Present)
-  - Engineered production web & mobile apps (iOS & Android) with concurrent users.
-  - Implemented reactive state management (Flutter, React) and low-latency APIs.
-  - Awarded Certificate of Excellence / Performance Award for sprint delivery.
-  - Tech: Flutter, Dart, React.js, Node.js, Python, PostgreSQL, WebSockets.
-
-* RedCoast — Full-Stack Software Engineer                  (06/2025 – 06/2026)
-  - Full-stack feature delivery, cutting query latency by 35%.
-  - Engineered automated BigQuery data ingestion pipelines for analytics.
-  - Automated regression testing using Selenium WebDriver and Jira CI/CD.
-  - Tech: React.js, Flutter, Django, Google BigQuery, PostgreSQL, Selenium.
-
-* National Center of AI (NCAI, NUST) — AI Research Intern   (08/2024 – 09/2024)
-  - Researched generative deep learning and vision-language alignment models.
-  - Benchmarked transformer architectures on distributed GPU clusters.
-
-* FAST-NUCES — Teaching Assistant, Computer Science        (06/2024 – 09/2024)
-  - Mentored 100+ students in C++, pointer arithmetic, memory & algorithms.
+[PROFESSIONAL SUMMARY]
+Full-Stack Software Engineer and AI Researcher with hands-on production experience
+architecting scalable web and mobile applications (iOS/Android) and deploying
+end-to-end deep learning pipelines. Proven expertise in Generative AI and Multimodal
+RAG (CLIP, FAISS, Gemma 3), cross-encoder semantic search (BERT, Amazon ESCI),
+real-time computer vision (YOLO, Unity VR), GPU compute acceleration (CUDA, Tensor
+Cores), and modern full-stack frameworks (React, Next.js, Node.js, Django, Flutter).
+Combines rigorous AI research experience at the National Center of AI (NCAI) with
+production engineering at EmpowerBits (awarded Performance Certificate) architecting
+high-concurrency client solutions with sub-second latency and resilient microservices.
 
 [EDUCATION]
-* FAST - National University of Computer & Emerging Sciences (NUCES)
-  - Bachelor of Science in Computer Science (Graduation: June 2026)
-  - Coursework: Distributed Systems, High-Performance Computing, Deep Learning,
-    Generative AI, Computer Vision, Operating Systems, Algorithms, Networks.
+* National University of Computer & Emerging Sciences (FAST-NUCES), Islamabad
+  BS in Computer Science (Graduation: June 2026)
+  Relevant Coursework: Distributed Systems, High-Performance Computing,
+  Deep Learning, Generative AI, Machine Learning, Computer Vision,
+  Advanced Operating Systems, Database Systems, Software Engineering, Networks,
+  Algorithms, Linear Algebra.
 
 [TECHNICAL SKILLS]
-* Languages: Python, C/C++ (Modern/STL), C#, Dart, JavaScript, TypeScript, SQL, CUDA C
-* AI / ML: PyTorch, Gemma 3, HuggingFace, CLIP, FAISS, Cross-Encoder, YOLOv8, OpenCV
-* Full-Stack: React, Next.js, Node.js, Express, Django REST, Flask, Flutter, WebSockets
-* Systems: CUDA Kernels, Tensor Cores, OpenMP, MPI, Docker, BigQuery, PostgreSQL, Git
+* Core AI & Deep Learning: PyTorch, TensorFlow/Keras, HuggingFace Transformers,
+  Sentence-Transformers, Scikit-Learn
+* Generative AI & LLMs: Multimodal RAG, Prompt Engineering (Zero/Few-Shot, CoT),
+  Fine-Tuning (BERT, Gemma), FAISS, spaCy, NLTK
+* Computer Vision & Edge AI: CLIP, YOLO (v8/v11), OpenCV, Real-Time Pose Estimation,
+  Image Segmentation, Unity VR
+* HPC & GPU Optimization: CUDA, Tensor Cores, GPU Parallelization, OpenMP, MPI,
+  Layer Offloading, FP16 Quantization
+* Languages & Core Tech: Python, C/C++, TypeScript, JavaScript, Dart, SQL,
+  HTML5/CSS3, Bash
+* Frontend & Cross-Platform: React.js, Next.js, Flutter (iOS & Android),
+  Tailwind CSS, Redux, State Management, Vite
+* Backend & Microservices: Node.js, Express.js, Django, FastAPI, Flask,
+  RESTful APIs, WebSockets, Redis
+* Databases & Cloud: PostgreSQL, MongoDB, Firebase, Google BigQuery, Cloud SQL, SQLite
+* DevOps & MLOps Tools: Linux, Git/GitHub, Docker, CI/CD Pipelines, Jira,
+  Agile/Scrum, Selenium, Apache Airflow
 
-[FEATURED REPOSITORIES (18 Total)]
-1. Pose2Play: Real-time YOLOv8 Computer Vision & Unity VR Platform (FYP)
-2. multimodal-rag-semantic-search: Gemma 3 FP16 + CLIP/MiniLM FAISS + ESCI 1.1M
-3. crag-advanced-rag-pipelines: Meta CRAG Benchmark (7 RAG Pipelines) + React
-4. Neural-Network-Acceleration: CUDA C++ Kernels + Tensor Cores (12x Speedup)
-5. ParButterfly: Billion-Edge Graph Motif Mining (OpenMP & MPI)
-6. GoMatch: Real-Time Geospatial Ride-Sharing (Flutter, Django, WebSockets)
-7. QuizVerse: Full-Stack Examination Management Platform (OAuth, JWT, MERN)
+[PROFESSIONAL EXPERIENCE]
+* EmpowerBits — Full-Stack Developer                       (2026/06 – Present)
+  - Engineered and deployed production-ready web and mobile applications
+    (iOS & Android) actively serving concurrent user traffic.
+  - Built modular, reactive UI architectures with Flutter and React, optimizing
+    state management to reduce client-side re-renders and latency.
+  - Designed resilient backend REST APIs and microservices, implementing database
+    query indexing and connection pooling in PostgreSQL.
+  - Architected low-latency API services and reactive state management, reducing
+    data fetch times by 30% under heavy concurrency.
+  - Awarded Certificate of Excellence / Performance Certificate for outstanding
+    software delivery, technical ownership, and rapid release velocity.
 
-Full CV (PDF): https://ahmed-hannan.github.io/assets/Ahmed_Hannan_Resume.pdf
+* RedCoast — Full-Stack Software Engineer                  (2025/06 – 2026/06)
+  - Spearheaded full-stack feature implementation and performance optimization
+    across multi-tier client web and mobile applications.
+  - Managed one-to-one client interactions to translate operational
+    specifications into scalable, production-ready architectural designs.
+  - Automated integration and regression testing using Selenium and Jira,
+    significantly improving engineering velocity and release stability.
+  - Conducted large-scale query optimization and analytics on user engagement
+    telemetry via Google BigQuery to optimize system bottlenecks.
+
+* National Center of AI (NCAI, NUST) — AI Research Intern   (2024/08 – 2024/09)
+  - Researched generative transformer architectures and multimodal image-text
+    synthesis; authored formal technical documentation for hybrid AI deployments.
+  - Investigated deep learning architectures with a focus on computational
+    efficiency, resource profiling, and technical documentation.
+
+* FAST – NUCES — Teaching Assistant (Programming Fundamentals) (2024/06 – 2024/09)
+  - Assisted in delivering core programming coursework; mentored 50+ students in
+    C/C++ memory management, dynamic allocation, pointer arithmetic, and problem-solving.
+
+[FEATURED ENGINEERING & RESEARCH PROJECTS]
+* Pose2Play — AI-Powered VR Rehabilitation Platform (Final Year Project)
+  - Built a real-time computer vision system using YOLO-based pose estimation
+    to track 3D patient movement kinematics and deliver corrective feedback.
+  - Integrated low-latency Python model inference with Unity VR (30+ FPS)
+    and IPC to boost physical therapy adherence.
+
+* Multimodal RAG & Semantic Product Search Suite
+  - Engineered an end-to-end multimodal RAG pipeline for financial PDFs using
+    PyMuPDF, OCR, and dual encoders (CLIP-512 + MiniLM-384) in FAISS.
+  - Deployed quantized Gemma-3-1b-it inference with FP16 and layer offloading
+    for 3GB VRAM; fine-tuned BERT-Tiny cross-encoder on Amazon ESCI (1.1M records).
+
+* CRAG: Advanced Multi-Pipeline RAG Benchmark & Web Dashboard
+  - Benchmarked 7 retrieval pipelines (RAG Fusion, HyDE, CRAG with confidence
+    gating, Graph RAG, RRR) on Meta CRAG noisy web corpus.
+  - Built FAISS vector index, spaCy NER extractor, Flask REST API, and React dashboard.
+
+* Parallel Implementation of ParButterfly on Large Bipartite Graphs
+  - Scalable parallel butterfly-motif counting in billion-edge graphs using OpenMP/MPI.
+  - Optimized cache locality, memory bandwidth, and load balancing across SMP clusters.
+
+* High-Performance Deep Neural Network Acceleration
+  - Accelerated DNN forward/backward passes and matrix kernels using CUDA & Tensor Cores.
+  - Coalesced global memory transactions and utilized shared memory tiling.
+
+* GoMatch & Full-Stack Application Platforms
+  - Built ride-hailing mobile app with driver-rider matching & real-time geolocation.
+  - Engineered responsive platforms with RBAC, OAuth/JWT, and real-time state.
+
+[HONORS & LEADERSHIP]
+* Certificate of Excellence / Performance Certificate — EmpowerBits
+* Undergraduate Teaching Assistant Appointment — FAST-NUCES (Programming Fundamentals)
 ================================================================================
