@@ -1489,17 +1489,60 @@
             </div>
 
             <div class="cv-showcase-actions">
-              <a href="assets/Ahmed_Hannan_Resume.pdf" download="Ahmed_Hannan_Resume.pdf" class="btn btn-primary">
+              <a href="assets/Ahmed_Hannan_Resume.pdf?v=2" download="Ahmed_Hannan_Resume.pdf" class="btn btn-primary">
                 <i class="fa-solid fa-file-arrow-down"></i>
                 <span>Download CV (PDF)</span>
               </a>
-              <a href="assets/Ahmed_Hannan_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <a href="assets/Ahmed_Hannan_Resume.docx?v=2" download="Ahmed_Hannan_Resume.docx" class="btn btn-outline-red">
+                <i class="fa-solid fa-file-word"></i>
+                <span>Download Word (.docx)</span>
+              </a>
+              <a href="assets/Ahmed_Hannan_Resume.pdf?v=2" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                <span>View Full PDF in Browser</span>
+                <span>Open Raw PDF in Tab</span>
               </a>
               <span class="cv-file-meta">
-                <i class="fa-solid fa-shield-halved"></i> 258 KB &bull; Standard ATS formatting &amp; typography
+                <i class="fa-solid fa-shield-halved"></i> Exactly 2 Pages &bull; Standard ATS Typography &bull; 258 KB
               </span>
+            </div>
+
+            <!-- Interactive Document Sheet Viewer (High-Resolution In-Place Rendering) -->
+            <div class="cv-document-viewer">
+              <div class="cv-viewer-toolbar">
+                <div class="cv-viewer-status">
+                  <span class="status-indicator live"></span>
+                  <span>Document Sheet Preview &bull; 2 Pages</span>
+                </div>
+                <div class="cv-viewer-controls" role="tablist" aria-label="Page View Selector">
+                  <button type="button" class="cv-page-btn active" data-page="all" role="tab" aria-selected="true">All Pages</button>
+                  <button type="button" class="cv-page-btn" data-page="1" role="tab" aria-selected="false">Page 1</button>
+                  <button type="button" class="cv-page-btn" data-page="2" role="tab" aria-selected="false">Page 2</button>
+                </div>
+              </div>
+
+              <div class="cv-sheets-stack">
+                <div class="cv-sheet-wrapper" data-sheet="1">
+                  <div class="cv-sheet-label">
+                    <span>Page 1 of 2 &mdash; Profile Summary, Education, Technical Skills &amp; Experience</span>
+                    <a href="assets/Ahmed_Hannan_Resume.pdf?v=2" target="_blank" class="cv-sheet-zoom"><i class="fa-solid fa-expand"></i> Fullscreen</a>
+                  </div>
+                  <picture>
+                    <source srcset="assets/resume_page_1.webp" type="image/webp">
+                    <img src="assets/resume_page_1.png" alt="Ahmed Hannan Master Resume - Page 1" class="cv-sheet-img" loading="lazy">
+                  </picture>
+                </div>
+
+                <div class="cv-sheet-wrapper" data-sheet="2">
+                  <div class="cv-sheet-label">
+                    <span>Page 2 of 2 &mdash; Featured Engineering Systems, HPC Acceleration &amp; Honors</span>
+                    <a href="assets/Ahmed_Hannan_Resume.pdf?v=2" target="_blank" class="cv-sheet-zoom"><i class="fa-solid fa-expand"></i> Fullscreen</a>
+                  </div>
+                  <picture>
+                    <source srcset="assets/resume_page_2.webp" type="image/webp">
+                    <img src="assets/resume_page_2.png" alt="Ahmed Hannan Master Resume - Page 2" class="cv-sheet-img" loading="lazy">
+                  </picture>
+                </div>
+              </div>
             </div>
           </div>
         </div>

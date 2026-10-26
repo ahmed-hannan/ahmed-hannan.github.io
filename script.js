@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initEmailCopy();
   initSmoothScroll();
   initRepoSearch();
+  initCvViewer();
 });
 
 /* ==========================================================================
@@ -616,3 +617,33 @@ window.copyTerminalCmd = function () {
     showToast('Copied curl command to clipboard');
   });
 };
+
+/* ==========================================================================
+   12. INTERACTIVE RESUME SHEET VIEWER CONTROLS
+   ========================================================================== */
+function initCvViewer() {
+  const btns = document.querySelectorAll('.cv-page-btn');
+  const sheets = document.querySelectorAll('.cv-sheet-wrapper');
+  if (!btns.length || !sheets.length) return;
+
+  btns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      btns.forEach((b) => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+
+      const page = btn.getAttribute('data-page');
+      sheets.forEach((sheet) => {
+        const sheetNum = sheet.getAttribute('data-sheet');
+        if (page === 'all' || page === sheetNum) {
+          sheet.style.display = 'block';
+        } else {
+          sheet.style.display = 'none';
+        }
+      });
+    });
+  });
+}
