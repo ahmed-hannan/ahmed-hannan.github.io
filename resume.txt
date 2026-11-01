@@ -1,5 +1,5 @@
 ================================================================================
-AHMED HANNAN — FULL-STACK SOFTWARE ENGINEER & AI RESEARCHER
+AHMED HANNAN — SOFTWARE ENGINEER & COMPUTER SCIENCE GRADUATE
 ================================================================================
 Location:   Islamabad, Pakistan
 Email:      ahmedhanan4@gmail.com
@@ -11,107 +11,146 @@ Full PDF:   https://ahmed-hannan.github.io/assets/Ahmed_Hannan_Resume.pdf
 ================================================================================
 
 [PROFESSIONAL SUMMARY]
-Full-Stack Software Engineer and AI Researcher with hands-on production experience
-architecting scalable web and mobile applications (iOS/Android) and deploying
-end-to-end deep learning pipelines. Proven expertise in Generative AI and Multimodal
-RAG (CLIP, FAISS, Gemma 3), cross-encoder semantic search (BERT, Amazon ESCI),
-real-time computer vision (YOLO, Unity VR), GPU compute acceleration (CUDA, Tensor
-Cores), and modern full-stack frameworks (React, Next.js, Node.js, Django, Flutter).
-Combines rigorous AI research experience at the National Center of AI (NCAI) with
-production engineering at EmpowerBits (awarded Performance Certificate) architecting
-high-concurrency client solutions with sub-second latency and resilient microservices.
+Computer Science senior at FAST-NUCES (graduating June 2026) with production
+experience in full-stack development and applied work in deep learning and
+high-performance computing. Built production cross-platform mobile apps in Flutter
+and web applications in React at EmpowerBits, conducted generative AI research at
+the National Center of AI (NCAI), and engineered systems spanning custom CUDA
+kernels, multimodal RAG pipelines, and parallel graph analytics on distributed clusters.
 
 [EDUCATION]
 * National University of Computer & Emerging Sciences (FAST-NUCES), Islamabad
   BS in Computer Science (Graduation: June 2026)
-  Relevant Coursework: Distributed Systems, High-Performance Computing,
-  Deep Learning, Generative AI, Machine Learning, Computer Vision,
-  Advanced Operating Systems, Database Systems, Software Engineering, Networks,
-  Algorithms, Linear Algebra.
+  - Relevant Coursework: Distributed Systems, High-Performance Computing,
+    Deep Learning, Generative AI, Machine Learning, Computer Vision,
+    Advanced Operating Systems, Database Systems, Software Engineering,
+    Computer Networks, Design & Analysis of Algorithms, Linear Algebra.
+  - Academic Appointment: Selected as Undergraduate Teaching Assistant for
+    Programming Fundamentals (C/C++), instructing lab sessions and mentoring 50+
+    students in manual memory management and data structures.
 
 [TECHNICAL SKILLS]
-* Core AI & Deep Learning: PyTorch, TensorFlow/Keras, HuggingFace Transformers,
-  Sentence-Transformers, Scikit-Learn
-* Generative AI & LLMs: Multimodal RAG, Prompt Engineering (Zero/Few-Shot, CoT),
-  Fine-Tuning (BERT, Gemma), FAISS, spaCy, NLTK
-* Computer Vision & Edge AI: CLIP, YOLO (v8/v11), OpenCV, Real-Time Pose Estimation,
-  Image Segmentation, Unity VR
-* HPC & GPU Optimization: CUDA, Tensor Cores, GPU Parallelization, OpenMP, MPI,
-  Layer Offloading, FP16 Quantization
-* Languages & Core Tech: Python, C/C++, TypeScript, JavaScript, Dart, SQL,
-  HTML5/CSS3, Bash
-* Frontend & Cross-Platform: React.js, Next.js, Flutter (iOS & Android),
-  Tailwind CSS, Redux, State Management, Vite
-* Backend & Microservices: Node.js, Express.js, Django, FastAPI, Flask,
+* Languages: Python, C/C++, TypeScript, JavaScript, Dart, SQL, Bash, CUDA C/C++
+* AI & Machine Learning: PyTorch, TensorFlow, HuggingFace Transformers,
+  Sentence-Transformers, Scikit-Learn, OpenCV
+* Generative AI & LLMs: Multimodal RAG, FAISS Vector Search, Prompt Engineering,
+  Fine-Tuning (LoRA, PEFT), Gemma 3, BERT, spaCy
+* Frontend & Mobile: React.js, Next.js, Flutter (iOS & Android), Tailwind CSS,
+  Redux Toolkit, State Management, Vite
+* Backend & APIs: Node.js, Express.js, Django REST Framework, FastAPI, Flask,
   RESTful APIs, WebSockets, Redis
-* Databases & Cloud: PostgreSQL, MongoDB, Firebase, Google BigQuery, Cloud SQL, SQLite
-* DevOps & MLOps Tools: Linux, Git/GitHub, Docker, CI/CD Pipelines, Jira,
-  Agile/Scrum, Selenium, Apache Airflow
+* Databases & Cloud: PostgreSQL, MongoDB, SQLite, Google BigQuery, Firebase, Cloud SQL
+* Systems & HPC: CUDA Kernels, Tensor Cores, OpenMP Multithreading,
+  MPI Distributed Computing, Linux, Socket Programming
+* DevOps & Tooling: Git/GitHub, Docker, CI/CD Pipelines, Jira, Agile/Scrum,
+  Selenium WebDriver, Apache Airflow
 
 [PROFESSIONAL EXPERIENCE]
-* EmpowerBits — Full-Stack Developer                       (2026/06 – Present)
-  - Engineered and deployed production-ready web and mobile applications
-    (iOS & Android) actively serving concurrent user traffic.
-  - Built modular, reactive UI architectures with Flutter and React, optimizing
-    state management to reduce client-side re-renders and latency.
-  - Designed resilient backend REST APIs and microservices, implementing database
-    query indexing and connection pooling in PostgreSQL.
-  - Architected low-latency API services and reactive state management, reducing
-    data fetch times by 30% under heavy concurrency.
-  - Awarded Certificate of Excellence / Performance Certificate for outstanding
-    software delivery, technical ownership, and rapid release velocity.
+* EmpowerBits — Full-Stack Developer                       (06/2026 – Present)
+  - Developed cross-platform mobile applications in Flutter (iOS and Android) and
+    responsive web dashboards in React for production client platforms.
+  - Engineered backend REST APIs using Node.js, Express, and PostgreSQL, implementing
+    connection pooling and database indexing for high concurrency.
+  - Implemented server-side Redis caching and optimized database query plans,
+    reducing median API response times by 30%.
+  - Architected clean reactive UI state management with Provider and Riverpod,
+    reducing client-side widget rebuilds and eliminating memory leaks.
+  - Received the EmpowerBits Certificate of Excellence for technical ownership
+    and on-schedule feature delivery across client release sprints.
 
-* RedCoast — Full-Stack Software Engineer                  (2025/06 – 2026/06)
-  - Spearheaded full-stack feature implementation and performance optimization
-    across multi-tier client web and mobile applications.
-  - Managed one-to-one client interactions to translate operational
-    specifications into scalable, production-ready architectural designs.
-  - Automated integration and regression testing using Selenium and Jira,
-    significantly improving engineering velocity and release stability.
-  - Conducted large-scale query optimization and analytics on user engagement
-    telemetry via Google BigQuery to optimize system bottlenecks.
+* RedCoast — Full-Stack Software Engineer                  (06/2025 – 06/2026)
+  - Built client-facing web and mobile features using React, Django REST Framework,
+    Flutter, and PostgreSQL across multiple production releases.
+  - Collaborated directly with client teams during bi-weekly sprints to gather
+    technical requirements, scope architectural trade-offs, and draft API schemas.
+  - Automated cross-browser regression testing suites using Selenium WebDriver and
+    Jira, reducing manual release verification cycles.
+  - Constructed SQL aggregation pipelines in Google BigQuery to process user
+    engagement logs, identifying usage trends and system performance bottlenecks.
 
-* National Center of AI (NCAI, NUST) — AI Research Intern   (2024/08 – 2024/09)
-  - Researched generative transformer architectures and multimodal image-text
-    synthesis; authored formal technical documentation for hybrid AI deployments.
-  - Investigated deep learning architectures with a focus on computational
-    efficiency, resource profiling, and technical documentation.
+* National Center of AI (NCAI, NUST) — AI Research Intern   (08/2024 – 09/2024)
+  - Researched generative transformer architectures and vision-language foundation
+    models, studying text-to-image synthesis pipelines and cross-attention mechanics.
+  - Benchmarked model inference speed and GPU VRAM footprint across FP16 and FP32
+    precisions on NVIDIA hardware.
+  - Authored technical documentation analyzing computational requirements,
+    parameter scaling trade-offs, and deployment viability for on-premise hardware.
 
-* FAST – NUCES — Teaching Assistant (Programming Fundamentals) (2024/06 – 2024/09)
-  - Assisted in delivering core programming coursework; mentored 50+ students in
-    C/C++ memory management, dynamic allocation, pointer arithmetic, and problem-solving.
+* FAST – NUCES — Teaching Assistant (Programming Fundamentals) (06/2024 – 09/2024)
+  - Conducted weekly lab sessions, code reviews, and office hours for 50+ undergraduate
+    students in C/C++ Programming Fundamentals.
+  - Taught core systems programming concepts including manual memory management
+    (malloc/free), pointer arithmetic, recursion, and struct memory layout.
+  - Assisted students in identifying memory leaks, buffer overflows, and segmentation
+    faults using debugging tools including GDB and Valgrind.
 
 [FEATURED ENGINEERING & RESEARCH PROJECTS]
-* Pose2Play — AI-Powered VR Rehabilitation Platform (Final Year Project)
-  - Built a real-time computer vision system using YOLO-based pose estimation
-    to track 3D patient movement kinematics and deliver corrective feedback.
-  - Integrated low-latency Python model inference with Unity VR (30+ FPS)
-    and IPC to boost physical therapy adherence.
+* Pose2Play — Real-Time VR & Computer Vision Rehabilitation Platform (FYP)
+  - Developed an interactive physical therapy platform combining real-time computer
+    vision pose estimation with an immersive Unity VR environment.
+  - Fine-tuned a YOLOv8-pose model to detect 17 skeletal joint keypoints, calculating
+    biomechanical metrics (knee flexion, shoulder abduction) in real-time.
+  - Engineered a low-latency socket IPC bridge streaming 3D joint coordinates from the
+    Python inference server to Unity C# at 30+ FPS (<40ms latency).
+  - Implemented visual guidance feedback within VR to show target posture alignments
+    and notify patients of improper form during exercise routines.
 
-* Multimodal RAG & Semantic Product Search Suite
-  - Engineered an end-to-end multimodal RAG pipeline for financial PDFs using
-    PyMuPDF, OCR, and dual encoders (CLIP-512 + MiniLM-384) in FAISS.
-  - Deployed quantized Gemma-3-1b-it inference with FP16 and layer offloading
-    for 3GB VRAM; fine-tuned BERT-Tiny cross-encoder on Amazon ESCI (1.1M records).
+* Multimodal Document RAG & Cross-Encoder Semantic Search
+  - Engineered an end-to-end multimodal retrieval-augmented generation pipeline to
+    extract, parse, index, and query complex financial PDF filings.
+  - Extracted text, tabular structures, and embedded visual charts using PyMuPDF and
+    Tesseract OCR, generating dense vectors via CLIP-ViT-B/32 (512-dim) and
+    all-MiniLM-L6-v2 (384-dim) stored in FAISS.
+  - Deployed quantized Google Gemma-3-1B-IT locally with FP16 precision and layer
+    offloading, executing grounded inference within a 3 GB GPU VRAM constraint.
+  - Fine-tuned a BERT-Tiny cross-encoder model on 1.1 million query-document pairs
+    from the Amazon ESCI dataset to rerank search candidates by semantic relevance.
 
-* CRAG: Advanced Multi-Pipeline RAG Benchmark & Web Dashboard
-  - Benchmarked 7 retrieval pipelines (RAG Fusion, HyDE, CRAG with confidence
-    gating, Graph RAG, RRR) on Meta CRAG noisy web corpus.
-  - Built FAISS vector index, spaCy NER extractor, Flask REST API, and React dashboard.
+* CRAG: Corrective & Multi-Pipeline RAG Benchmark Platform
+  - Implemented and benchmarked 7 retrieval pipelines—Standard RAG, RAG Fusion, HyDE,
+    Corrective RAG (CRAG) with confidence gating, Graph RAG, and RRR—on the Meta CRAG
+    noisy web corpus.
+  - Developed a modular evaluation harness using spaCy named entity recognition,
+    measuring exact match accuracy, retrieval hallucination rate, and execution latency.
+  - Built a Flask REST API backend integrated with FAISS vector indexing and a
+    responsive React + Vite frontend dashboard for side-by-side pipeline inspection.
 
 * Parallel Implementation of ParButterfly on Large Bipartite Graphs
-  - Scalable parallel butterfly-motif counting in billion-edge graphs using OpenMP/MPI.
-  - Optimized cache locality, memory bandwidth, and load balancing across SMP clusters.
+  - Designed and implemented a parallel counting algorithm for 4-vertex butterfly
+    motifs on billion-edge bipartite graphs using OpenMP (shared memory) and MPI
+    (distributed memory).
+  - Optimized vertex degree sorting, compressed sparse row (CSR) graph storage, and
+    L1/L2 cache locality, minimizing thread synchronization stalls.
+  - Evaluated scalability on symmetric multiprocessing (SMP) and cluster environments,
+    achieving near-linear speedup across 16 CPU cores on large web graph benchmarks.
 
-* High-Performance Deep Neural Network Acceleration
-  - Accelerated DNN forward/backward passes and matrix kernels using CUDA & Tensor Cores.
-  - Coalesced global memory transactions and utilized shared memory tiling.
+* GPU Neural Network Kernel Acceleration (CUDA C++)
+  - Wrote custom CUDA C++ kernels to accelerate general matrix multiplication (GEMM)
+    and 2D convolution forward and backward passes on NVIDIA GPUs.
+  - Implemented 2D shared-memory tiling, register caching, and coalesced global memory
+    access patterns to maximize memory bus throughput.
+  - Profiled warp occupancy, register pressure, and shared memory bank conflicts using
+    NVIDIA Nsight Compute, achieving performance competitive with cuBLAS.
 
-* GoMatch & Full-Stack Application Platforms
-  - Built ride-hailing mobile app with driver-rider matching & real-time geolocation.
-  - Engineered responsive platforms with RBAC, OAuth/JWT, and real-time state.
+* GoMatch — Real-Time Geolocation Ride Sharing Platform
+  - Built a full-stack mobile ride-sharing application with Flutter, Node.js, Express,
+    and MongoDB implementing passenger hailing and driver matching.
+  - Integrated live background GPS tracking and WebSocket channels for bidirectional
+    low-latency driver location updates and route rendering.
+  - Engineered transactional ride state management (request, match, pickup, transit,
+    completion) with JWT authentication and fare estimation logic.
 
-[HONORS & LEADERSHIP]
-* Certificate of Excellence / Performance Certificate — EmpowerBits
-* Undergraduate Teaching Assistant Appointment — FAST-NUCES (Programming Fundamentals)
+* Enterprise Field Operations Mobile Suite
+  - Built an offline-first enterprise mobile application in Flutter for field distribution
+    logistics, order lifecycles, and inventory catalog navigation.
+  - Engineered background synchronization using local SQLite transactions, automatically
+    reconciling order queues and telemetry when network connectivity is restored.
+
+[HONORS, AWARDS & PROFESSIONAL ACTIVITIES]
+* Certificate of Excellence / Performance Certificate: Awarded by EmpowerBits for
+  high-impact production engineering and timely milestone delivery.
+* Undergraduate Teaching Assistantship: Appointed by FAST-NUCES Faculty of Computer
+  Science for Programming Fundamentals based on technical merit.
+* Open-Source Contributions: Actively maintain 18+ public GitHub repositories covering
+  deep learning pipelines, GPU acceleration, systems programming, and mobile applications.
 ================================================================================
