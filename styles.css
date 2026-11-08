@@ -307,20 +307,26 @@ ul {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
-.nav-container {
+.nav-container,
+.navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  width: 100%;
+  flex-wrap: nowrap;
 }
 
-.nav-brand {
+.nav-brand,
+.brand-link {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   font-weight: 700;
   font-size: 1.08rem;
   color: var(--text-primary);
+  text-decoration: none;
+  flex-shrink: 0;
 }
 
 .brand-badge {
@@ -342,6 +348,7 @@ ul {
 }
 
 .nav-brand:hover .brand-badge,
+.brand-link:hover .brand-badge,
 .footer-brand-title:hover .brand-badge {
   transform: translateY(-1px) scale(1.06);
   filter: drop-shadow(0 4px 14px rgba(185, 49, 63, 0.45));
@@ -350,7 +357,8 @@ ul {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 1.85rem;
+  gap: 1.25rem;
+  flex-shrink: 1;
 }
 
 .nav-link {
@@ -359,6 +367,8 @@ ul {
   color: var(--text-muted);
   position: relative;
   padding: 0.35rem 0;
+  white-space: nowrap;
+  transition: color var(--transition-fast);
 }
 
 .nav-link:hover,
@@ -386,6 +396,11 @@ ul {
   display: flex;
   align-items: center;
   gap: 0.85rem;
+  flex-shrink: 0;
+}
+
+.nav-actions .btn {
+  white-space: nowrap;
 }
 
 .nav-toggle {
@@ -395,6 +410,8 @@ ul {
   color: var(--text-primary);
   font-size: 1.35rem;
   cursor: pointer;
+  padding: 0.35rem;
+  line-height: 1;
 }
 
 /* ==========================================================================
@@ -1587,7 +1604,7 @@ ul {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-menu {
     position: fixed;
     top: 68px;
@@ -1596,10 +1613,12 @@ ul {
     height: calc(100vh - 68px);
     background: var(--bg-primary);
     flex-direction: column;
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     gap: 1.5rem;
     transition: left var(--transition-normal);
     border-top: 1px solid var(--border-subtle);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
   }
 
   .nav-menu.open {
@@ -1609,9 +1628,32 @@ ul {
   .nav-toggle {
     display: block;
   }
+}
 
+@media (max-width: 768px) {
   .hero-stats {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container,
+  .navbar-container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .brand-name {
+    font-size: 0.96rem;
+  }
+
+  .nav-actions {
+    gap: 0.5rem;
+  }
+
+  .nav-actions .btn-sm {
+    padding: 0.38rem 0.65rem;
+    font-size: 0.76rem;
   }
 }
 
