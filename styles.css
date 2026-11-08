@@ -401,12 +401,12 @@ ul {
    HERO SECTION
    ========================================================================== */
 .hero {
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 105px;
+  padding-bottom: 45px;
 }
 
 .hero-content {
@@ -2119,4 +2119,174 @@ ul {
   height: auto;
   display: block;
   background: #ffffff;
+}
+
+
+/* ==========================================================================
+   STREAMLINED PORTFOLIO UPDATES (COMPACT HERO, TOP-RIGHT AVATAR, NO PILLS)
+   ========================================================================== */
+
+.hero-container {
+  display: grid !important;
+  grid-template-columns: 1fr auto !important;
+  align-items: start !important;
+  gap: 3rem !important;
+}
+
+.hero-content {
+  max-width: 680px !important;
+}
+
+.hero-title {
+  font-size: clamp(2.3rem, 4.5vw, 3.4rem) !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  color: var(--accent-red-hover) !important;
+  font-family: var(--font-mono) !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.hero-description {
+  font-size: 1.02rem !important;
+  line-height: 1.65 !important;
+  color: var(--text-secondary) !important;
+  margin-bottom: 1.75rem !important;
+  max-width: 620px !important;
+}
+
+.hero-portrait-wrapper {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+}
+
+.hero-avatar {
+  width: 250px !important;
+  height: 255px !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  border-radius: 20px !important;
+  border: 1px solid var(--border-subtle) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45) !important;
+  background: var(--bg-surface) !important;
+  transition: transform 0.3s ease, border-color 0.3s ease !important;
+  display: block !important;
+}
+
+.hero-avatar:hover {
+  transform: translateY(-3px) !important;
+  border-color: var(--accent-red) !important;
+}
+
+@media (max-width: 860px) {
+  .hero-container {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  .hero-portrait-wrapper {
+    justify-content: flex-start !important;
+    order: -1 !important;
+  }
+  .hero-avatar {
+    width: 170px !important;
+    height: 175px !important;
+  }
+}
+
+/* Typography tech info replacing oval pill badges */
+.project-category-text {
+  font-family: var(--font-mono) !important;
+  font-size: 0.74rem !important;
+  color: var(--accent-red-hover) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  font-weight: 600 !important;
+}
+
+.project-tech-text {
+  font-family: var(--font-mono) !important;
+  font-size: 0.8rem !important;
+  color: var(--text-muted) !important;
+  margin-top: 0.85rem !important;
+  line-height: 1.5 !important;
+}
+
+.project-tech-text strong {
+  color: var(--text-secondary) !important;
+}
+
+.projects-cta-row {
+  text-align: center !important;
+  margin-top: 2.75rem !important;
+}
+
+/* Minimalist skill list without pill chips */
+.skill-list-text {
+  font-family: var(--font-mono) !important;
+  font-size: 0.85rem !important;
+  color: var(--text-secondary) !important;
+  line-height: 1.7 !important;
+  margin-top: 0.5rem !important;
+}
+
+/* CV Download Card (No displayed sheet viewer) */
+.cv-download-card {
+  max-width: 740px !important;
+  margin: 0 auto !important;
+  background: var(--bg-surface) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: var(--radius-lg) !important;
+  padding: 2.5rem 2rem !important;
+  text-align: center !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+.cv-download-title {
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin-bottom: 0.65rem !important;
+}
+
+.cv-download-desc {
+  font-size: 0.95rem !important;
+  color: var(--text-secondary) !important;
+  max-width: 580px !important;
+  margin: 0 auto 1.5rem auto !important;
+  line-height: 1.6 !important;
+}
+
+.cv-download-actions {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1rem !important;
+  flex-wrap: wrap !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.cv-download-meta {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+  font-family: var(--font-mono) !important;
+  font-size: 0.78rem !important;
+  color: var(--text-muted) !important;
+  flex-wrap: wrap !important;
+}
+
+/* Contact Form Centered (No redundant cards) */
+.contact-form-wrapper {
+  max-width: 620px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+
+.contact-form-card {
+  max-width: 100% !important;
 }

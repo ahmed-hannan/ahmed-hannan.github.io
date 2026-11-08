@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Projects | Ahmed Hannan</title>
+  
+  <meta name="description" content="All 11 engineering projects and research systems by Ahmed Hannan — Computer Vision, Multimodal RAG, CUDA HPC, and Full-Stack Applications.">
+  <meta name="author" content="Ahmed Hannan">
+  <meta name="theme-color" content="#0a0b0e">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-link" aria-label="Ahmed Hannan Home">
+        <div class="brand-badge" aria-hidden="true">
+          <img src="assets/logo.svg" alt="AH Logo" width="34" height="34">
+        </div>
+        <span class="brand-name">Ahmed Hannan</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="index.html#hero" class="nav-link">Home</a>
+        <a href="index.html#projects" class="nav-link">Featured</a>
+        <a href="projects.html" class="nav-link active">All Projects (11)</a>
+        <a href="index.html#experience" class="nav-link">Experience</a>
+        <a href="index.html#skills" class="nav-link">Skills</a>
+        <a href="index.html#cv" class="nav-link">CV</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="assets/Ahmed_Hannan_Resume.pdf" download="Ahmed_Hannan_Resume.pdf" class="btn btn-outline-red btn-sm">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Download CV</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 100px; padding-bottom: 80px;">
+    <div class="container">
+      
+      <!-- Page Header -->
+      <div style="margin-bottom: 2.5rem;">
+        <a href="index.html#projects" class="btn btn-outline-red btn-sm" style="margin-bottom: 1rem; display: inline-flex;">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>Back to Home</span>
+        </a>
+        <h1 class="section-title" style="margin-top: 0.5rem;">All <span>Projects &amp; Systems</span></h1>
+        <p class="section-description" style="margin-left: 0; text-align: left;">
+          Complete catalog of 11 engineering platforms, research implementations, and systems projects.
+        </p>
+      </div>
+
+      <!-- Projects Grid (All 11 Projects) -->
+      <div class="projects-grid">
+
+        <!-- 1. Pose2Play -->
+        <article class="project-card">
+          <div>
+            <div class="project-card-header">
+              <span class="project-category-text">FYP &bull; Computer Vision &bull; VR</span>
+              <div class="project-actions">
+                <a href="https://github.com/ahmed-hannan/Pose2Play" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Pose2Play GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/ahmed-hannan/Pose2Play" target="_blank" rel="noopener noreferrer">Pose2Play: VR Physical Therapy Platform</a>
+            </h3>
+            <p class="project-description">
+              Interactive physical therapy rehabilitation system streaming YOLOv8 skeletal keypoints over an IPC socket bridge to Unity VR at 30+ FPS for real-time posture feedback and form correction.
+            </p>
+            <div class="project-tech-text">
+              <strong>Stack:</strong> YOLOv8, Unity VR, PyTorch, C#, Python, Sockets
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/ahmed-hannan/Pose2Play" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+              <span>View Repository</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 2. Multimodal Document RAG -->
+        <article class="project-card">
+          <div>
+            <div class="project-card-header">
+              <span class="project-category-text">Multimodal AI &bull; LLMs</span>
+              <div class="project-actions">
+                <a href="https://github.com/ahmed-hannan/multimodal-rag-semantic-search" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Multimodal RAG GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/ahmed-hannan/multimodal-rag-semantic-search" target="_blank" rel="noopener noreferrer">Multimodal Document RAG &amp; Semantic Search</a>
+            </h3>
+            <p class="project-description">
+              End-to-end multimodal retrieval pipeline parsing text, tables, and charts from financial PDFs using PyMuPDF and dual CLIP/MiniLM embeddings in FAISS, with quantized Gemma 3 inference within 3 GB VRAM.
+            </p>
+            <div class="project-tech-text">
+              <strong>Stack:</strong> Google Gemma 3, CLIP, FAISS, PyTorch, BERT-Tiny, Amazon ESCI
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/ahmed-hannan/multimodal-rag-semantic-search" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+              <span>View Repository</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 3. CRAG Benchmark -->
+        <article class="project-card">
+          <div>
+            <div class="project-card-header">
+              <span class="project-category-text">Evaluation &bull; RAG</span>
+              <div class="project-actions">
+                <a href="https://github.com/ahmed-hannan/crag-advanced-rag-pipelines" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="CRAG Benchmark GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/ahmed-hannan/crag-advanced-rag-pipelines" target="_blank" rel="noopener noreferrer">CRAG: Multi-Pipeline RAG Benchmark</a>
+            </h3>
+            <p class="project-description">
+              Comprehensive evaluation benchmark comparing 7 retrieval strategies (Standard RAG, RAG Fusion, HyDE, Corrective RAG, Graph RAG) on Meta CRAG web search data with automated spaCy evaluation.
+            </p>
+            <div class="project-tech-text">
+              <strong>Stack:</strong> Meta CRAG, FAISS, spaCy NER, Flask REST, React, Vite
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/ahmed-hannan/crag-advanced-rag-pipelines" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+              <span>View Repository</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 4. CUDA Kernel Acceleration -->
+        <article class="project-card">
+          <div>
+            <div class="project-card-header">
+              <span class="project-category-text">HPC &bull; CUDA C++</span>
+              <div class="project-actions">
+                <a href="https://github.com/ahmed-hannan/Neural-Network-Acceleration" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="CUDA Acceleration GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/ahmed-hannan/Neural-Network-Acceleration" target="_blank" rel="noopener noreferrer">CUDA Neural Network Kernel Acceleration</a>
+            </h3>
+            <p class="project-description">
+              Custom CUDA C++ kernels for general matrix multiplication (GEMM) and 2D convolutions, applying 2D shared-memory tiling and memory coalescing to maximize GPU memory bus throughput.
+            </p>
+            <div class="project-tech-text">
+              <strong>Stack:</strong> CUDA C++, Tensor Cores, Shared Memory, NVIDIA Nsight, C++
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/ahmed-hannan/Neural-Network-Acceleration" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+              <span>View Repository</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 5. ParButterfly Graph Analytics -->
+        <article class="project-card">
+          <div>
+            <div class="project-card-header">
+              <span class="project-category-text">HPC &bull; OpenMP &bull; MPI</span>
+              <div class="project-actions">
+                <a href="https://github.com/ahmed-hannan/parbutterfly" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="ParButterfly GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/ahmed-hannan/parbutterfly" target="_blank" rel="noopener noreferrer">ParButterfly: Billion-Edge Graph Motif Mining</a>
+            </h3>
+            <p class="project-description">
+              Parallel counting of 4-vertex butterfly motifs on billion-edge bipartite graphs using OpenMP multithreading and MPI distributed message passing, optimizing CSR storage and cache locality.
+            </p>
+            <div class="project-tech-text">
+              <strong>Stack:</strong> C/C++, OpenMP, MPI, Graph Analytics, Cluster Computing
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/ahmed-hannan/parbutterfly" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+              <span>View Repository</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 6. Deep Vision & Autoregressive Models -->
+        <article class="project-card">
+          <div>
+            <div class="project-card-header">
+              <span class="project-category-text">Generative AI &bull; PyTorch</span>
+              <div class="project-actions">
+                <a href="https://github.com/ahmed-hannan/CNN-Sequence-Autoregressive-Models" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Autoregressive Models GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/ahmed-hannan/CNN-Sequence-Autoregressive-Models" target="_blank" rel="noopener noreferrer">Deep Vision &amp; Autoregressive Models</a>
+            </h3>
+            <p class="project-description">
+              PyTorch implementations of autoregressive generative models including PixelCNN (masked convolutions), PixelRNN, recurrent language models, and CNN classification benchmarks on CIFAR-10.
+            </p>
+            <div class="project-tech-text">
+              <strong>Stack:</strong> PyTorch, PixelCNN, RNN, LSTM, Computer Vision, Generative AI
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/ahmed-hannan/CNN-Sequence-Autoregressive-Models" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+              <span>View Repository</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 7. GoMatch -->
+        <article class="project-card">
+          <div>
+            <div class="project-card-header">
+              <span class="project-category-text">Full-Stack &bull; Mobile</span>
+              <div class="project-actions">
+                <a href="https://github.com/ahmed-hannan/GoMatch" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GoMatch GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/ahmed-hannan/GoMatch" target="_blank" rel="noopener noreferrer">GoMatch: Real-Time Geospatial Ride Sharing</a>
+            </h3>
+            <p class="project-description">
+              Cross-platform ride-hailing app with Flutter, Node.js, Express, and MongoDB featuring real-time driver matching, background GPS tracking, and WebSocket location streaming.
+            </p>
+            <div class="project-tech-text">
+              <strong>Stack:</strong> Flutter, Node.js, Express, MongoDB, WebSockets, Google Maps API
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/ahmed-hannan/GoMatch" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+              <span>View Repository</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 8. QuizVerse -->
+        <article class="project-card">
+          <div>
+            <div class="project-card-header">
+              <span class="project-category-text">Full-Stack &bull; MERN</span>
+              <div class="project-actions">
+                <a href="https://github.com/ahmed-hannan/QuizVerse" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="QuizVerse GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/ahmed-hannan/QuizVerse" target="_blank" rel="noopener noreferrer">QuizVerse: Interactive Assessment Platform</a>
+            </h3>
+            <p class="project-description">
+              Full-stack assessment platform featuring quiz authoring, real-time timed challenges, role-based access control, Google OAuth, and interactive player performance analytics.
+            </p>
+            <div class="project-tech-text">
+              <strong>Stack:</strong> React.js, Node.js, Express.js, MongoDB, Tailwind CSS, REST APIs
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/ahmed-hannan/QuizVerse" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+              <span>View Repository</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 9. Enterprise Field Operations -->
+        <article class="project-card">
+          <div>
+            <div class="project-card-header">
+              <span class="project-category-text">Enterprise Mobile &bull; Flutter</span>
+              <div class="project-actions">
+                <a href="https://github.com/ahmed-hannan/enterprise-field-operations" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Enterprise Field Operations GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/ahmed-hannan/enterprise-field-operations" target="_blank" rel="noopener noreferrer">Enterprise Field Operations Platform</a>
+            </h3>
+            <p class="project-description">
+              Offline-first mobile application in Flutter for field distribution logistics, order lifecycles, and inventory management with SQLite background reconciliation.
+            </p>
+            <div class="project-tech-text">
+              <strong>Stack:</strong> Flutter, SQLite, Dart, REST APIs, Offline Sync
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/ahmed-hannan/enterprise-field-operations" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+              <span>View Repository</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 10. Project Montage -->
+        <article class="project-card">
+          <div>
+            <div class="project-card-header">
+              <span class="project-category-text">Agentic AI &bull; LangGraph</span>
+              <div class="project-actions">
+                <a href="https://github.com/ahmed-hannan/project-montage" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Project Montage GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/ahmed-hannan/project-montage" target="_blank" rel="noopener noreferrer">Project Montage: Multi-Agent Orchestration</a>
+            </h3>
+            <p class="project-description">
+              Autonomous multi-agent pipeline orchestrating specialized LLM worker nodes for research, code synthesis, and multi-turn planning using LangGraph and LangChain.
+            </p>
+            <div class="project-tech-text">
+              <strong>Stack:</strong> Python, LangChain, LangGraph, LLM Agents, Prompt Engineering
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/ahmed-hannan/project-montage" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+              <span>View Repository</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 11. Ghazala Bukhari -->
+        <article class="project-card">
+          <div>
+            <div class="project-card-header">
+              <span class="project-category-text">Frontend &bull; React</span>
+              <div class="project-actions">
+                <a href="https://github.com/ahmed-hannan/GhazalaBukhari" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Ghazala Bukhari GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/ahmed-hannan/GhazalaBukhari" target="_blank" rel="noopener noreferrer">Ghazala Bukhari: Commercial Brand Showcase</a>
+            </h3>
+            <p class="project-description">
+              Luxury commercial brand showcase featuring responsive product lookbooks, smooth layout transitions, and high-performance media rendering.
+            </p>
+            <div class="project-tech-text">
+              <strong>Stack:</strong> React.js, Vite, Modern CSS, Responsive Design
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/ahmed-hannan/GhazalaBukhari" target="_blank" rel="noopener noreferrer" class="project-link-cta">
+              <span>View Repository</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="margin-top: 3rem; text-align: center;">
+        <a href="index.html#hero" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>Return to Homepage</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-brand-title">
+            <div class="brand-badge" aria-hidden="true">
+              <img src="assets/logo.svg" alt="AH Logo" width="34" height="34">
+            </div>
+            <span>Ahmed Hannan</span>
+          </div>
+          <p class="footer-brand-desc">
+            Software Engineer &amp; AI Researcher graduating from FAST-NUCES in June 2026.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <div class="footer-links-list">
+            <a href="index.html#hero" class="footer-link">Home</a>
+            <a href="index.html#projects" class="footer-link">Featured Projects</a>
+            <a href="projects.html" class="footer-link">All Projects (11)</a>
+            <a href="index.html#experience" class="footer-link">Experience</a>
+            <a href="index.html#skills" class="footer-link">Skills</a>
+            <a href="index.html#cv" class="footer-link">CV</a>
+            <a href="index.html#contact" class="footer-link">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Connect</h4>
+          <div class="footer-links-list" style="margin-bottom: 1.25rem;">
+            <a href="mailto:ahmedhanan4@gmail.com" class="footer-link">
+              <i class="fa-solid fa-envelope" style="margin-right: 0.4rem; color: var(--accent-red);"></i> ahmedhanan4@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/ahmedhannan2" target="_blank" rel="noopener noreferrer" class="footer-link">
+              <i class="fa-brands fa-linkedin" style="margin-right: 0.4rem; color: var(--accent-red);"></i> linkedin.com/in/ahmedhannan2
+            </a>
+            <a href="https://github.com/ahmed-hannan" target="_blank" rel="noopener noreferrer" class="footer-link">
+              <i class="fa-brands fa-github" style="margin-right: 0.4rem; color: var(--accent-red);"></i> github.com/ahmed-hannan
+            </a>
+            <span class="footer-link" style="color: var(--text-muted);">
+              <i class="fa-solid fa-location-dot" style="margin-right: 0.4rem; color: var(--accent-red);"></i> Islamabad, Pakistan
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Ahmed Hannan. All rights reserved.</div>
+        <a href="#" class="back-to-top">
+          <span>Back to top</span>
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
